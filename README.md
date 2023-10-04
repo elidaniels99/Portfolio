@@ -3,7 +3,8 @@
 ## ELI DANIELS: DATA SCIENTIST 
 Data-driven entrepreneur and versatile data scientist with a proven track record of leveraging diverse skill sets to seize opportunities. Proficient in data modeling and processing, as well as programming languages including Python and SwiftUI. Procuring, cleaning and interpreting data from varying sources to create solutions and overcome challenges.
 
-**Skills**: Python | Agile Methodologies | SQL | Data Visualization | Data Cleaning | Predictive Modeling | Database Structures | Statistical Analysis | User Experience | SwiftUI | Github | Product Strategy
+**Skills**: Python | Agile Methodologies | SQL | Data Visualization | Data Cleaning | Predictive Modeling | Database Structures | Statistical Analysis | User Experience 
+
 **Software**: Jupyter Notebook | Visual Studio Code | Tableau | Power BI | Google Analytics | Python Libraries | Google Suite 
 
 #### CERTIFICATIONS 
@@ -22,7 +23,7 @@ Marketing and Management
 AZ Excellence Tuition Scholarship Award
 
 ## Projects 
-#### Emotion Recognition using Deep Learning
+### Emotion Recognition using Deep Learning
 Developed and implemented a deep learning-based emotion recognition model for facial images
 Conducted data preprocessing, feature extraction, and model training using Python, TensorFlow, and Keras.
 Created an interactive web application using Streamlit to provide a user-friendly interface
@@ -35,7 +36,7 @@ Upload an image to detect and display emotions expressed in human faces. The app
 Live Webcam Emotion Detection:
 Experience real-time emotion detection through your webcam. Toggle the webcam feed, and see your own emotions overlaid on the live video
 
-#### Web APIs & NLP
+### Web APIs & NLP
 Scraped and parsed data from subreddits enabling the collection of subscriber counts, posts, and relevant metrics for comprehensive comparative analysis.
 Employed advanced Natural Language Processing (NLP) techniques, including tokenization, lemmatization, and stopwords removal, to perform in-depth text analysis. This process facilitated sentiment analysis, keyword extraction, and content type classification, shedding light on user engagement and content preferences in these communities.
 
