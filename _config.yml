@@ -1,17 +1,4 @@
-# Build settings
-markdown: kramdown
-theme: minima
-
-# GitHub Pages settings
-remote_theme: jekyll/minima
-plugins:
-  - jekyll-feed
-
-# Exclude files from being published to GitHub Pages
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-
-# Jekyll settings
-permalink: pretty
+title: Eli Daniels
+#description: text below image
+show_downloads: true
+theme: jekyll-theme-minimal
