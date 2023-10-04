@@ -9,14 +9,7 @@ description: Text below image
 show_downloads: true
 
 # GitHub Pages settings
-remote_theme: jekyll/minimal  # Change the theme to "jekyll/minimal"
-
-# Exclude files from being published to GitHub Pages
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - _config.yml
+remote_theme: jekyll/minimal  # Change the theme to "jekyll/hacker"
 
 # Jekyll settings
 permalink: pretty
