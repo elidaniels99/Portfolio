@@ -12,7 +12,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - _config.yml
 
 # Jekyll settings
 permalink: pretty
