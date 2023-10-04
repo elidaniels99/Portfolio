@@ -18,4 +18,15 @@ General Assembly, Remote
 Certificate of Completion, Data Science Immersive
 
 University of Arizona | Eller College of Management  				         
-Marketing and Management                                                                                                        AZ Excellence Tuition Scholarship Award
+Marketing and Management
+AZ Excellence Tuition Scholarship Award
+
+## Projects 
+#### Emotion Recognition using Deep Learning
+Streamlit App:
+
+Image Emotion Recognition:
+Upload an image to detect and display emotions expressed in human faces. The app uses deep learning to recognize emotions like happiness, sadness, suprise, anger, disgust, neutral.
+
+Live Webcam Emotion Detection:
+Experience real-time emotion detection through your webcam. Toggle the webcam feed, and see your own emotions overlaid on the live video
