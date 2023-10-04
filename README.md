@@ -7,20 +7,14 @@ Data-driven entrepreneur and versatile data scientist with a proven track record
 
 **Software**: Jupyter Notebook | Visual Studio Code | Tableau | Power BI | Google Analytics | Python Libraries | Google Suite 
 
-#### CERTIFICATIONS 
+### CERTIFICATIONS 
+General Assembly: Data Science Immersive
+- - - - 
 IBM Data Science Professional: Python for Data Science, AI & Development
-- - - - - - - - -
+- - - -
 Databases and SQL for Data Science with Python 
-- - - - - - - - -
+- - - -
 UX Design Process: Empathize, Define, and Ideate 
-
-#### EDUCATION   
-General Assembly, Remote						        
-Certificate of Completion, Data Science Immersive
-
-University of Arizona | Eller College of Management  				         
-Marketing and Management
-AZ Excellence Tuition Scholarship Award
 
 ## Projects 
 ### [Emotion Recognition using Deep Learning](https://github.com/elidaniels99/Emotion_Recognition){:target="_blank" style="color: white;"} 
