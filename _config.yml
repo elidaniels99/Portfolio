@@ -1,0 +1,35 @@
+# General site settings
+title: Eli Daniels
+description: A collection of my work and projects
+#url: https://yourusername.github.io
+#baseurl: "" # Leave this empty for GitHub Pages
+
+# GitHub Pages settings
+theme: jekyll-theme-hacker 
+remote_theme: "" # Remove this line when using a locally installed theme
+
+plugins:
+  - jekyll-feed # Include Jekyll plugins as needed
+
+# Navigation
+navbar_links:
+  - text: Home
+    url: /
+  - text: About
+    url: /about
+  - text: Projects
+    url: /projects
+
+# Jekyll-specific settings
+markdown: kramdown
+highlighter: rouge
+
+# Build settings
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor", "README.md", "LICENSE"]
+
+
+# Custom footer text
+footer_text: | # You can customize the footer text here
+  © Let's Chat!
+
+# Additional configurations or customizations go here
