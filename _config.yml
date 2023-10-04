@@ -1,8 +1,8 @@
 # General site settings
 title: Eli Daniels
 description: A collection of my work and projects
-#url: https://yourusername.github.io
-#baseurl: "" # Leave this empty for GitHub Pages
+url: https://elidaniels99.github.io/Portfolio
+baseurl: "" # Leave this empty for GitHub Pages
 
 # GitHub Pages settings
 theme: jekyll-theme-hacker 
