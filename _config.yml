@@ -1,30 +1,18 @@
-# General site settings
-title: Eli Daniels
-description: A collection of my work and projects
-url: https://elidaniels99.github.io/Portfolio
-baseurl: "" # Leave this empty for GitHub Pages
+# Build settings
+markdown: kramdown
+theme: minima
 
 # GitHub Pages settings
-theme: jekyll-theme-hacker 
-
+remote_theme: jekyll/minima
 plugins:
-  - jekyll-feed # Include Jekyll plugins as needed
+  - jekyll-feed
 
-# Navigation
-navbar_links:
-  - text: Home
-    url: /
-  - text: About
-    url: /about
-  - text: Projects
-    url: /projects
+# Exclude files from being published to GitHub Pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - _config.yml
 
-# Jekyll-specific settings
-markdown: kramdown
-highlighter: rouge
-
-# Build settings
-exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor", "README.md", "LICENSE"]
-
-
-# Additional configurations or customizations go here
+# Jekyll settings
+permalink: pretty
