@@ -27,8 +27,4 @@ highlighter: rouge
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor", "README.md", "LICENSE"]
 
 
-# Custom footer text
-footer_text: | # You can customize the footer text here
-  © Let's Chat!
-
 # Additional configurations or customizations go here
