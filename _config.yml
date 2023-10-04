@@ -6,7 +6,6 @@ description: A collection of my work and projects
 
 # GitHub Pages settings
 theme: jekyll-theme-hacker 
-remote_theme: "" # Remove this line when using a locally installed theme
 
 plugins:
   - jekyll-feed # Include Jekyll plugins as needed
