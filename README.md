@@ -23,7 +23,7 @@ Marketing and Management
 AZ Excellence Tuition Scholarship Award
 
 ## Projects 
-### [Emotion Recognition using Deep Learning](https://github.com/elidaniels99/Emotion_Recognition)
+### [Emotion Recognition using Deep Learning](https://github.com/elidaniels99/Emotion_Recognition){:target="_blank" style="color: black;"}
 Developed and implemented a deep learning-based emotion recognition model for facial images
 Conducted data preprocessing, feature extraction, and model training using Python, TensorFlow, and Keras.
 Created an interactive web application using Streamlit to provide a user-friendly interface
@@ -36,11 +36,11 @@ Upload an image to detect and display emotions expressed in human faces. The app
 Live Webcam Emotion Detection:
 Experience real-time emotion detection through your webcam. Toggle the webcam feed, and see your own emotions overlaid on the live video
 
-### [Web APIs & NLP](https://github.com/elidaniels99/Web-APIs-NLP)
+### [Web APIs & NLP](https://github.com/elidaniels99/Web-APIs-NLP){:target="_blank" style="color: black;"}
 Scraped and parsed data from subreddits enabling the collection of subscriber counts, posts, and relevant metrics for comprehensive comparative analysis.
 Employed advanced Natural Language Processing (NLP) techniques, including tokenization, lemmatization, and stopwords removal, to perform in-depth text analysis. This process facilitated sentiment analysis, keyword extraction, and content type classification, shedding light on user engagement and content preferences in these communities.
 
-### [Fitness Activity Recommender](https://github.com/elidaniels99/FitnessActivityRecommender)
+### [Fitness Activity Recommender](https://github.com/elidaniels99/FitnessActivityRecommender){:target="_blank" style="color: black;"}
 Assist individuals in achieving their fitness goals by analyzing fitness activity through data from two distinct tracking devices, being Apple Watch vs Fitbit. Leveraging data from these devices, including health-related attributes, we will calculate BMI, combine user-specific insights and employ a predictive activity type model to create recommended fitness activities personalized to the individual to help them attain a BMI within the "normal" range
 
 - K-Means Clustering Model to determine how the model would classify our known classifications of underweight, normal weight, overweight, and obese for optimized value of K.
