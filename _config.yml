@@ -1,5 +1,5 @@
 title: Eli Daniels
-description: Text below image
 
-# GitHub Pages settings
-remote_theme: jekyll/hacker
+#description: text below image
+show_downloads: true
+theme: jekyll-theme-Hacker
