@@ -6,14 +6,14 @@ Data-driven entrepreneur and versatile data scientist with a proven track record
 **Skills**: Python | Agile Methodologies | SQL | Data Visualization | Data Cleaning | Predictive Modeling | Database Structures | Statistical Analysis | User Experience | SwiftUI | Github | Product Strategy
 **Software**: Jupyter Notebook | Visual Studio Code | Tableau | Power BI | Google Analytics | Python Libraries | Google Suite 
 
-## CERTIFICATIONS 
+#### CERTIFICATIONS 
 IBM Data Science Professional: Python for Data Science, AI & Development
 - - - - - - - - -
 Databases and SQL for Data Science with Python 
 - - - - - - - - -
 UX Design Process: Empathize, Define, and Ideate 
 
-## EDUCATION   
+#### EDUCATION   
 General Assembly, Remote						        
 Certificate of Completion, Data Science Immersive
 
