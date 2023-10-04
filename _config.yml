@@ -1,36 +1,5 @@
-# Creative and Personalized config.yml
+title: Eli Daniels
 
-# Website title with a personal touch
-title: Eli Daniels - Exploring the Digital Frontier
-
-# A captivating and creative description
-description: >
-  Welcome to my digital playground,
-  where I decrypt the secrets of cyberspace, one line of code at a time.
-
-# Enable the ability to showcase your latest creations for download
+#description: text below image
 show_downloads: true
-
-# A custom theme, tailored for your unique style
 theme: jekyll-theme-Hacker
-
-# Customize the color scheme
-hacker_theme:
-  primary_color: '#00ff00'   # Green
-  secondary_color: '#ff0000' # Red
-  accent_color: '#0000ff'    # Blue
-  background_color: '#000000' # Black
-
-# GitHub Pages settings
-remote_theme: jekyll/minimal
-
-# Exclude files from being published to GitHub Pages
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - _config.yml
-
-# Jekyll settings
-permalink: pretty
-
