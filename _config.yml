@@ -1,4 +1,22 @@
+markdown: kramdown
+theme: hacker  # Change the theme to "hacker"
+
+# Website title and description
 title: Eli Daniels
-#description: text below image
+description: Text below image
+
+# Show downloads option
 show_downloads: true
-theme: jekyll-theme-hacker
+
+# GitHub Pages settings
+remote_theme: jekyll/minimal  # Change the theme to "jekyll/minimal"
+
+# Exclude files from being published to GitHub Pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - _config.yml
+
+# Jekyll settings
+permalink: pretty
