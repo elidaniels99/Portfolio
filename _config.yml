@@ -1,15 +1,5 @@
-markdown: kramdown
-theme: hacker  # Change the theme to "hacker"
-
-# Website title and description
 title: Eli Daniels
 description: Text below image
 
-# Show downloads option
-show_downloads: true
-
 # GitHub Pages settings
-remote_theme: jekyll/minimal  # Change the theme to "jekyll/hacker"
-
-# Jekyll settings
-permalink: pretty
+remote_theme: jekyll/hacker
