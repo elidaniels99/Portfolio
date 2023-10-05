@@ -18,6 +18,7 @@ UX Design Process: Empathize, Define, and Ideate
 
 ## Projects 
 ### [Emotion Recognition using Deep Learning](https://github.com/elidaniels99/Emotion_Recognition){:target="_blank" style="color: white;"} 
+(assets/Emotion-Recognition image.jpg)
 Developed and implemented a deep learning-based emotion recognition model for facial images
 Conducted data preprocessing, feature extraction, and model training using Python, TensorFlow, and Keras.
 Created an interactive web application using Streamlit to provide a user-friendly interface
