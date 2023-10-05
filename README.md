@@ -18,7 +18,7 @@ UX Design Process: Empathize, Define, and Ideate
 
 ## Projects 
 ### [Emotion Recognition using Deep Learning](https://github.com/elidaniels99/Emotion_Recognition){:target="_blank" style="color: white;"} 
-(assets/Emotion-Recognition%20image.jpg)
+<img src="assets/Emotion-Recognition-image.jpg" alt="alt text" width="300" height="200">
 Developed and implemented a deep learning-based emotion recognition model for facial images
 Conducted data preprocessing, feature extraction, and model training using Python, TensorFlow, and Keras.
 Created an interactive web application using Streamlit to provide a user-friendly interface
@@ -30,7 +30,7 @@ Upload an image to detect and display emotions expressed in human faces. The app
 
 Live Webcam Emotion Detection:
 Experience real-time emotion detection through your webcam. Toggle the webcam feed, and see your own emotions overlaid on the live video
-
+[](assets/Emotion-Recognition-image.jpg)
 ### [Web APIs & NLP](https://github.com/elidaniels99/Web-APIs-NLP){:target="_blank" style="color: white;"}
 Scraped and parsed data from subreddits enabling the collection of subscriber counts, posts, and relevant metrics for comprehensive comparative analysis.
 Employed advanced Natural Language Processing (NLP) techniques, including tokenization, lemmatization, and stopwords removal, to perform in-depth text analysis. This process facilitated sentiment analysis, keyword extraction, and content type classification, shedding light on user engagement and content preferences in these communities.
