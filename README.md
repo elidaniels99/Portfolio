@@ -21,7 +21,7 @@ UX Design Process: Empathize, Define, and Ideate
 ## [Emotion Recognition using Deep Learning](https://github.com/elidaniels99/Emotion_Recognition){:target="_blank" style="color: white;"}
 <div class="project">
   <div class="project-image">
-    <img src="assets/Emotion-Recognition-image.jpg" alt="Emotion Recognition" width="300" height="200">
+    <img src="assets/Emotion-image.jpg" alt="Emotion Recognition" width="300" height="200">
   </div>
   <div class="project-description">
     <p>
