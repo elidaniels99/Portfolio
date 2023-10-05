@@ -3,81 +3,9 @@
 ## ELI DANIELS: DATA SCIENTIST 
 Data-driven entrepreneur and versatile data scientist with a proven track record of leveraging diverse skill sets to seize opportunities. Proficient in data modeling and processing, as well as programming languages including Python and SwiftUI. Procuring, cleaning and interpreting data from varying sources to create solutions and overcome challenges.
 
-<div class="skills-section">
-  <h2>Skills</h2>
-  <div class="skills">
-    <div class="skill">
-      <i class="fas fa-code"></i>
-      <p>Python</p>
-    </div>
-    <div class="skill">
-      <i class="fas fa-cogs"></i>
-      <p>Agile Methodologies</p>
-    </div>
-    <div class="skill">
-      <i class="fas fa-database"></i>
-      <p>SQL</p>
-    </div>
-    <div class="skill">
-      <i class="fas fa-chart-bar"></i>
-      <p>Data Visualization</p>
-    </div>
-    <div class="skill">
-      <i class="fas fa-broom"></i>
-      <p>Data Cleaning</p>
-    </div>
-    <div class="skill">
-      <i class="fas fa-lightbulb"></i>
-      <p>Predictive Modeling</p>
-    </div>
-    <div class="skill">
-      <i class="fas fa-database"></i>
-      <p>Database Structures</p>
-    </div>
-    <div class="skill">
-      <i class="fas fa-chart-line"></i>
-      <p>Statistical Analysis</p>
-    </div>
-    <div class="skill">
-      <i class="fas fa-user"></i>
-      <p>User Experience</p>
-    </div>
-  </div>
-</div>
+## Skills: Python * Agile Methodologies * SQL * Data Visualization * Data Cleaning * Predictive Modeling * Database Structures * Statistical Analysis * User Experience 
 
-<div class="software-section">
-  <h2>Software</h2>
-  <div class="software">
-    <div class="tool">
-      <i class="fas fa-file-code"></i>
-      <p>Jupyter Notebook</p>
-    </div>
-    <div class="tool">
-      <i class="fas fa-file-code"></i>
-      <p>Visual Studio Code</p>
-    </div>
-    <div class="tool">
-      <i class="fas fa-chart-pie"></i>
-      <p>Tableau</p>
-    </div>
-    <div class="tool">
-      <i class="fas fa-chart-pie"></i>
-      <p>Power BI</p>
-    </div>
-    <div class="tool">
-      <i class="fas fa-chart-line"></i>
-      <p>Google Analytics</p>
-    </div>
-    <div class="tool">
-      <i class="fab fa-python"></i>
-      <p>Python Libraries</p>
-    </div>
-    <div class="tool">
-      <i class="fab fa-google"></i>
-      <p>Google Suite</p>
-    </div>
-  </div>
-</div>
+## Software: Jupyter Notebook - Visual Studio Code - Tableau - Power BI - Google Analytics - Python Libraries - Google Suite 
 
 ### CERTIFICATIONS 
 General Assembly: Data Science Immersive
