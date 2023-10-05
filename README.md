@@ -18,7 +18,7 @@ Databases and SQL for Data Science with Python
 - - - -
 UX Design Process: Empathize, Define, and Ideate 
 
-<!-- Emotion Recognition using Deep Learning -->
+[Emotion Recognition using Deep Learning](https://github.com/elidaniels99/Emotion_Recognition){:target="_blank" style="color: white;"}
 <div class="project">
   <h3><a href="https://github.com/elidaniels99/Emotion_Recognition" target="_blank">Emotion Recognition using Deep Learning</a></h3>
   <div class="project-image">
@@ -36,7 +36,7 @@ UX Design Process: Empathize, Define, and Ideate
   </div>
 </div>
 
-<!- Web APIs & NLP ->
+[Web APIs & NLP](https://github.com/elidaniels99/Web-APIs-NLP){:target="_blank" style="color: white;"}
 <div class="project">
   <h3><a href="https://github.com/elidaniels99/Web-APIs-NLP" target="_blank">Web APIs & NLP</a></h3>
   <div class="project-image">
@@ -49,7 +49,7 @@ UX Design Process: Empathize, Define, and Ideate
   </div>
 </div>
 
-<!-- Fitness Activity Recommender -->
+## [Fitness Activity Recommender](https://github.com/elidaniels99/FitnessActivityRecommender){:target="_blank" style="color: white;"}
 <div class="project">
   <h3><a href="https://github.com/elidaniels99/FitnessActivityRecommender" target="_blank">Fitness Activity Recommender</a></h3>
   <div class="project-image">
