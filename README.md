@@ -18,9 +18,8 @@ Databases and SQL for Data Science with Python
 - - - -
 UX Design Process: Empathize, Define, and Ideate 
 
-[Emotion Recognition using Deep Learning](https://github.com/elidaniels99/Emotion_Recognition){:target="_blank" style="color: white;"}
+## [Emotion Recognition using Deep Learning](https://github.com/elidaniels99/Emotion_Recognition){:target="_blank" style="color: white;"}
 <div class="project">
-  <h3><a href="https://github.com/elidaniels99/Emotion_Recognition" target="_blank">Emotion Recognition using Deep Learning</a></h3>
   <div class="project-image">
     <img src="assets/Emotion-Recognition-image.jpg" alt="Emotion Recognition" width="300" height="200">
   </div>
@@ -36,9 +35,8 @@ UX Design Process: Empathize, Define, and Ideate
   </div>
 </div>
 
-[Web APIs & NLP](https://github.com/elidaniels99/Web-APIs-NLP){:target="_blank" style="color: white;"}
+## [Web APIs & NLP](https://github.com/elidaniels99/Web-APIs-NLP){:target="_blank" style="color: white;"}
 <div class="project">
-  <h3><a href="https://github.com/elidaniels99/Web-APIs-NLP" target="_blank">Web APIs & NLP</a></h3>
   <div class="project-image">
     <img src="assets/NLP.jpg" alt="Web APIs & NLP" width="300" height="200">
   </div>
@@ -51,7 +49,6 @@ UX Design Process: Empathize, Define, and Ideate
 
 ## [Fitness Activity Recommender](https://github.com/elidaniels99/FitnessActivityRecommender){:target="_blank" style="color: white;"}
 <div class="project">
-  <h3><a href="https://github.com/elidaniels99/FitnessActivityRecommender" target="_blank">Fitness Activity Recommender</a></h3>
   <div class="project-image">
     <img src="assets/fitnessimage.png" alt="Fitness Activity Recommender" width="300" height="200">
   </div>
