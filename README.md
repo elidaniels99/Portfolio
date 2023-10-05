@@ -18,11 +18,11 @@ UX Design Process: Empathize, Define, and Ideate
 
 <!-- Emotion Recognition using Deep Learning -->
 <div class="project">
+  <h3><a href="https://github.com/elidaniels99/Emotion_Recognition" target="_blank">Emotion Recognition using Deep Learning</a></h3>
   <div class="project-image">
     <img src="assets/Emotion-Recognition-image.jpg" alt="Emotion Recognition" width="300" height="200">
   </div>
   <div class="project-description">
-    <h3><a href="https://github.com/elidaniels99/Emotion_Recognition" target="_blank">Emotion Recognition using Deep Learning</a></h3>
     <p>
       Developed and implemented a deep learning-based emotion recognition model for facial images. Conducted data preprocessing, feature extraction, and model training using Python, TensorFlow, and Keras. Created an interactive web application using Streamlit to provide a user-friendly interface.
     </p>
@@ -36,11 +36,11 @@ UX Design Process: Empathize, Define, and Ideate
 
 <!-- Web APIs & NLP -->
 <div class="project">
+  <h3><a href="https://github.com/elidaniels99/Web-APIs-NLP" target="_blank">Web APIs & NLP</a></h3>
   <div class="project-image">
     <img src="assets/NLP.jpg" alt="Web APIs & NLP" width="300" height="200">
   </div>
   <div class="project-description">
-    <h3><a href="https://github.com/elidaniels99/Web-APIs-NLP" target="_blank">Web APIs & NLP</a></h3>
     <p>
       Scraped and parsed data from subreddits enabling the collection of subscriber counts, posts, and relevant metrics for comprehensive comparative analysis. Employed advanced Natural Language Processing (NLP) techniques, including tokenization, lemmatization, and stopwords removal, to perform in-depth text analysis. This process facilitated sentiment analysis, keyword extraction, and content type classification, shedding light on user engagement and content preferences in these communities.
     </p>
@@ -49,18 +49,16 @@ UX Design Process: Empathize, Define, and Ideate
 
 <!-- Fitness Activity Recommender -->
 <div class="project">
+  <h3><a href="https://github.com/elidaniels99/FitnessActivityRecommender" target="_blank">Fitness Activity Recommender</a></h3>
   <div class="project-image">
     <img src="assets/fitnessimage.png" alt="Fitness Activity Recommender" width="300" height="200">
   </div>
   <div class="project-description">
-    <h3><a href="https://github.com/elidaniels99/FitnessActivityRecommender" target="_blank">Fitness Activity Recommender</a></h3>
     <p>
       Assist individuals in achieving their fitness goals by analyzing fitness activity through data from two distinct tracking devices, being Apple Watch vs Fitbit. Leveraging data from these devices, including health-related attributes, we will calculate BMI, combine user-specific insights, and employ a predictive activity type model to create recommended fitness activities personalized to the individual to help them attain a BMI within the "normal" range.
     </p>
   </div>
 </div>
-</div>
-
 - K-Means Clustering Model to determine how the model would classify our known classifications of underweight, normal weight, overweight, and obese for optimized value of K.
 - DBSCAN Model to compare the difference between the optimized value of K while comparing silhouette scores.
 - Random Forests Model to predict activity type for users based on their fitness and health data.
