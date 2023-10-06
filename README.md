@@ -3,41 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotating Colorful Square</title>
+    <title>Randomly Moving Square</title>
     <style>
-        .rotating-square {
+        .moving-square {
             width: 100px;
             height: 100px;
             background-color: red;
-            animation: rotateAndChangeColor 5s linear infinite;
+            position: absolute;
+            animation: changePosition 2s linear infinite, changeColor 5s linear infinite;
         }
 
-        @keyframes rotateAndChangeColor {
+        @keyframes changePosition {
             0% {
-                transform: rotate(0deg);
+                left: 0;
+                top: 0;
+            }
+            25% {
+                left: 75%;
+                top: 0;
+            }
+            50% {
+                left: 75%;
+                top: 75%;
+            }
+            75% {
+                left: 0;
+                top: 75%;
+            }
+            100% {
+                left: 0;
+                top: 0;
+            }
+        }
+
+        @keyframes changeColor {
+            0% {
                 background-color: red;
             }
             25% {
-                transform: rotate(90deg);
                 background-color: blue;
             }
             50% {
-                transform: rotate(180deg);
                 background-color: green;
             }
             75% {
-                transform: rotate(270deg);
                 background-color: yellow;
             }
             100% {
-                transform: rotate(360deg);
                 background-color: red;
             }
         }
     </style>
 </head>
 <body>
-    <div class="rotating-square"></div>
+    <div class="moving-square"></div>
+
+    <script>
+        const square = document.querySelector(".moving-square");
+
+        function randomPosition() {
+            const maxX = window.innerWidth - square.clientWidth;
+            const maxY = window.innerHeight - square.clientHeight;
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+            square.style.left = randomX + "px";
+            square.style.top = randomY + "px";
+        }
+
+        // Initial random position
+        randomPosition();
+
+        // Update position every 2 seconds
+        setInterval(randomPosition, 2000);
+    </script>
 </body>
 </html>
 
