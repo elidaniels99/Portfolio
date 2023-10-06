@@ -12,7 +12,7 @@
 
         /* Create a class for the green dot */
         .green-dot {
-            position: absolute;
+            position: fixed;
             width: 5px;
             height: 5px;
             background-color: green;
