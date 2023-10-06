@@ -101,18 +101,15 @@ UX Design Process: Empathize, Define, and Ideate
             <div class="glowing-code-block">
                 <pre>
                     <code>
-                        # Python code block
-                        import tensorflow as tf
-                        from tensorflow import keras
-                        # ... your code here ...
+                        <p><strong>Streamlit App:</strong></p>
+            <ul>
+                <li><strong>Image Emotion Recognition:</strong> Upload an image to detect and display emotions expressed in human faces. The app uses deep learning to recognize emotions like happiness, sadness, surprise, anger, disgust, neutral.</li>
+                <li><strong>Live Webcam Emotion Detection:</strong> Experience real-time emotion detection through your webcam. Toggle the webcam feed, and see your own emotions overlaid on the live video.</li> 
                     </code>
                 </pre>
             </div>
             <!-- End Glowing Code Block -->
-            <p><strong>Streamlit App:</strong></p>
-            <ul>
-                <li><strong>Image Emotion Recognition:</strong> Upload an image to detect and display emotions expressed in human faces. The app uses deep learning to recognize emotions like happiness, sadness, surprise, anger, disgust, neutral.</li>
-                <li><strong>Live Webcam Emotion Detection:</strong> Experience real-time emotion detection through your webcam. Toggle the webcam feed, and see your own emotions overlaid on the live video.</li>
+            
             </ul>
         </div>
     </div>
