@@ -115,6 +115,85 @@ IBM Data Science Professional: Python for Data Science, AI & Development
 Databases and SQL for Data Science with Python 
 - - - -
 UX Design Process: Empathize, Define, and Ideate 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomly Moving Square</title>
+    <style>
+        .moving-square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            animation: changePosition 2s linear infinite, changeColor 5s linear infinite;
+        }
+
+        @keyframes changePosition {
+            0% {
+                left: 0;
+                top: 0;
+            }
+            25% {
+                left: calc(100% - 100px);
+                top: 0;
+            }
+            50% {
+                left: calc(100% - 100px);
+                top: calc(100% - 100px);
+            }
+            75% {
+                left: 0;
+                top: calc(100% - 100px);
+            }
+            100% {
+                left: 0;
+                top: 0;
+            }
+        }
+
+        @keyframes changeColor {
+            0% {
+                background-color: red;
+            }
+            25% {
+                background-color: blue;
+            }
+            50% {
+                background-color: green;
+            }
+            75% {
+                background-color: yellow;
+            }
+            100% {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="moving-square"></div>
+
+    <script>
+        const square = document.querySelector(".moving-square");
+
+        function randomPosition() {
+            const maxX = window.innerWidth - square.clientWidth;
+            const maxY = window.innerHeight - square.clientHeight;
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+            square.style.left = randomX + "px";
+            square.style.top = randomY + "px";
+        }
+
+        // Initial random position
+        randomPosition();
+
+        // Update position every 2 seconds
+        setInterval(randomPosition, 2000);
+    </script>
+</body>
+</html>
 
 ## [Emotion Recognition using Deep Learning](https://github.com/elidaniels99/Emotion_Recognition){:target="_blank" style="color: white;"}
 <div class="project">
