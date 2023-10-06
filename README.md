@@ -1,25 +1,3 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacker Terminal Animation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Terminal Container -->
-    <div class="terminal">
-        <pre id="output"></pre>
-        <div id="input-container">
-            <span id="prompt">> </span>
-            <input type="text" id="input" autofocus>
-        </div>
-    </div>
-
-    <!-- Include the JavaScript file -->
-    <script src="script.js"></script>
-</body>
-</html>
-
 # Portfolio
 
 # ELI DANIELS: DATA SCIENTIST 
@@ -84,29 +62,70 @@ UX Design Process: Empathize, Define, and Ideate
 - DBSCAN Model to compare the difference between the optimized value of K while comparing silhouette scores.
 - Random Forests Model to predict activity type for users based on their fitness and health data.
 
-
-.terminal {
-    background-color: black;
-    color: limegreen;
-    font-family: monospace;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    padding: 20px;
+<html>
+<head>
+<style>
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
 }
 
-/* Style for the input container */
-#input-container {
-    display: flex;
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  animation: bounce 2s infinite;
+}
+</style>
+</head>
+<body>
+
+<div class="ball"></div>
+
+</body>
+</html>
+
+# New One 
+
+<html>
+<head>
+<style>
+a {
+  color: #3498db;
+  transition: color 0.3s ease;
 }
 
-/* Style for the input field */
-#input {
-    background-color: transparent;
-    border: none;
-    color: limegreen;
-    outline: none;
-    font-family: monospace;
-    font-size: 16px;
-    flex-grow: 1;
+a:hover {
+  color: #2980b9;
 }
+</style>
+</head>
+<body>
+
+<a href="#">Hover over me</a>
+
+</body>
+</html>
+
+# CSS Transition
+<html>
+<head>
+<style>
+.button {
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+</style>
+</head>
+<body>
+
+<button class="button">Hover me</button>
+
+</body>
+</html>
