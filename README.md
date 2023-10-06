@@ -1,29 +1,3 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Title Here</title>
-    <link rel="stylesheet" href="your-stylesheet.css">
-</head>
-<body>
-    <div class="container">
-        <div class="background background0">
-            <div class="criterion">
-                <div class="text text0">W</div>
-                <div class="frame frame0"></div>
-                <!-- Particles -->
-                <div class="particle particle00"></div>
-                <div class="particle particle01"></div>
-                <!-- Add more particles here -->
-            </div>
-        </div>
-        <!-- Repeat for other characters and backgrounds -->
-        <!-- You can copy and modify the above structure for each character -->
-    </div>
-    <script src="your-script.js"></script>
-</body>
-</html>
-
 # Portfolio
 
 <html>
@@ -106,3 +80,30 @@ UX Design Process: Empathize, Define, and Ideate
 - K-Means Clustering Model to determine how the model would classify our known classifications of underweight, normal weight, overweight, and obese for optimized value of K.
 - DBSCAN Model to compare the difference between the optimized value of K while comparing silhouette scores.
 - Random Forests Model to predict activity type for users based on their fitness and health data.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <link rel="stylesheet" href="your-stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background background0">
+            <div class="criterion">
+                <div class="text text0">W</div>
+                <div class="frame frame0"></div>
+                <!-- Particles -->
+                <div class="particle particle00"></div>
+                <div class="particle particle01"></div>
+                <!-- Add more particles here -->
+            </div>
+        </div>
+        <!-- Repeat for other characters and backgrounds -->
+        <!-- You can copy and modify the above structure for each character -->
+    </div>
+    <script src="your-script.js"></script>
+</body>
+</html>
+
