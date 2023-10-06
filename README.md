@@ -2,10 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Falling Green Dots</title>
+    <title>Scrolling Green Dots</title>
     <style>
         body {
             margin: 0;
+            padding: 0;
+            overflow: hidden;
             background-color: black;
         }
 
@@ -16,43 +18,37 @@
             height: 5px;
             background-color: green;
             border-radius: 50%;
-            animation: fall 2s linear infinite, moveX 2s linear infinite;
-        }
-
-        /* Define keyframes for falling animation */
-        @keyframes fall {
-            0% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(100vh);
-                opacity: 0;
-            }
-        }
-
-        /* Define keyframes for horizontal movement */
-        @keyframes moveX {
-            0%, 100% {
-                transform: translateX(0);
-            }
-            50% {
-                transform: translateX(20px);
-            }
         }
     </style>
 </head>
 <body>
-    <!-- Create multiple green dots with random positions -->
-    <div class="green-dot" style="left: 10%; animation-delay: 0s;"></div>
-    <div class="green-dot" style="left: 20%; animation-delay: 1s;"></div>
-    <div class="green-dot" style="left: 30%; animation-delay: 2s;"></div>
-    <div class="green-dot" style="left: 40%; animation-delay: 0.5s;"></div>
-    <div class="green-dot" style="left: 50%; animation-delay: 1.5s;"></div>
-    <div class="green-dot" style="left: 60%; animation-delay: 2.5s;"></div>
-    <div class="green-dot" style="left: 70%; animation-delay: 1.8s;"></div>
-    <div class="green-dot" style="left: 80%; animation-delay: 0.8s;"></div>
-    <div class="green-dot" style="left: 90%; animation-delay: 2.2s;"></div>
+    <!-- JavaScript to create and move green dots -->
+    <script>
+        // Function to create a green dot at a random position
+        function createGreenDot() {
+            const dot = document.createElement("div");
+            dot.classList.add("green-dot");
+            dot.style.left = `${Math.random() * 100}vw`;
+            document.body.appendChild(dot);
+
+            // Animate the dot's vertical movement
+            dot.animate(
+                [
+                    { transform: "translateY(-100vh)" },
+                    { transform: "translateY(100vh)" },
+                ],
+                {
+                    duration: 5000, // Adjust the duration as needed
+                    iterations: Infinity,
+                }
+            );
+        }
+
+        // Create multiple green dots
+        for (let i = 0; i < 20; i++) {
+            createGreenDot();
+        }
+    </script>
 </body>
 </html>
 
