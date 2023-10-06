@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moving Green Dots on Lower Half</title>
+    <title>Moving Green Dots Background</title>
     <style>
         body {
             margin: 0;
@@ -16,26 +16,19 @@
             width: 5px;
             height: 5px;
             background-color: green;
-            border-radius: 50%;
-        }
-
-        /* Add some content to occupy space on the upper half */
-        #upper-content {
-            height: 50vh;
+            border-radius: 100%;
         }
     </style>
 </head>
 <body>
-    <div id="upper-content"></div>
-
-    <!-- JavaScript to create and move green dots on the lower half -->
+    <!-- JavaScript to create and move green dots -->
     <script>
-        // Function to create a green dot at a random position on the lower half
+        // Function to create a green dot at a random position
         function createGreenDot() {
             const dot = document.createElement("div");
             dot.classList.add("green-dot");
             dot.style.left = `${Math.random() * 100}vw`;
-            dot.style.top = `${50 + Math.random() * 50}vh`; // Randomize position on the lower half
+            dot.style.top = `${Math.random() * 100}vh`;
             document.body.appendChild(dot);
 
             // Animate the dot's movement
@@ -52,7 +45,7 @@
             );
         }
 
-        // Create multiple green dots on the lower half
+        // Create multiple green dots to cover the viewport
         for (let i = 0; i < 100; i++) { // You can adjust the number of dots
             createGreenDot();
         }
