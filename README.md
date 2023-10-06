@@ -2,76 +2,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Shooting Stars</title>
+    <title>Falling Green Dots</title>
     <style>
         body {
             margin: 0;
-            overflow: hidden;
             background-color: black;
         }
 
-        .shooting-star {
+        /* Create a class for the green dot */
+        .green-dot {
             position: absolute;
-            width: 10px;
-            height: 10px;
+            width: 5px;
+            height: 5px;
             background-color: green;
             border-radius: 50%;
-            opacity: 0;
-            animation: shootingStar 3s linear infinite;
+            animation: fall 2s linear infinite, moveX 2s linear infinite;
         }
 
-        @keyframes shootingStar {
+        /* Define keyframes for falling animation */
+        @keyframes fall {
             0% {
+                transform: translateY(0);
                 opacity: 1;
-                transform: translateX(0) translateY(0) scale(1);
             }
             100% {
+                transform: translateY(100vh);
                 opacity: 0;
-                transform: translateX(100vw) translateY(-100vh) scale(0.2);
             }
         }
 
-        /* Generate random shooting stars */
-        @keyframes randomShootingStars {
-            0% {
-                transform: translateX(0) translateY(0) scale(1);
+        /* Define keyframes for horizontal movement */
+        @keyframes moveX {
+            0%, 100% {
+                transform: translateX(0);
             }
-            100% {
-                transform: translateX(calc(100vw * var(--randomX))) translateY(calc(-100vh * var(--randomY))) scale(0.2);
+            50% {
+                transform: translateX(20px);
             }
-        }
-
-        /* Create multiple shooting stars with random positions */
-        .shooting-stars-container {
-            position: absolute;
-            width: 100vw;
-            height: 100vh;
-            animation: randomShootingStars 5s linear infinite;
         }
     </style>
 </head>
 <body>
-    <div class="shooting-stars-container">
-        <div class="shooting-star" style="--randomX: 0.2; --randomY: 0.1;"></div>
-        <div class="shooting-star" style="--randomX: 0.7; --randomY: 0.3;"></div>
-        <div class="shooting-star" style="--randomX: 0.5; --randomY: 0.4;"></div>
-        <!-- Add more shooting stars with different positions -->
-        <div class="shooting-star" style="--randomX: 0.3; --randomY: 0.2;"></div>
-        <div class="shooting-star" style="--randomX: 0.8; --randomY: 0.5;"></div>
-        <div class="shooting-star" style="--randomX: 0.4; --randomY: 0.7;"></div>
-        <div class="shooting-star" style="--randomX: 0.6; --randomY: 0.9;"></div>
-        <div class="shooting-star" style="--randomX: 0.1; --randomY: 0.6;"></div>
-        <div class="shooting-star" style="--randomX: 0.9; --randomY: 0.4;"></div>
-        <div class="shooting-star" style="--randomX: 0.3; --randomY: 0.8;"></div>
-        <div class="shooting-star" style="--randomX: 0.7; --randomY: 0.1;"></div>
-        <div class="shooting-star" style="--randomX: 0.2; --randomY: 0.7;"></div>
-        <div class="shooting-star" style="--randomX: 0.4; --randomY: 0.2;"></div>
-        <div class="shooting-star" style="--randomX: 0.6; --randomY: 0.5;"></div>
-        <div class="shooting-star" style="--randomX: 0.8; --randomY: 0.9;"></div>
-        <div class="shooting-star" style="--randomX: 0.1; --randomY: 0.4;"></div>
-        <div class="shooting-star" style="--randomX: 0.5; --randomY: 0.7;"></div>
-        <div class="shooting-star" style="--randomX: 0.3; --randomY: 0.6;"></div>
-    </div>
+    <!-- Create multiple green dots with random positions -->
+    <div class="green-dot" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="green-dot" style="left: 20%; animation-delay: 1s;"></div>
+    <div class="green-dot" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="green-dot" style="left: 40%; animation-delay: 0.5s;"></div>
+    <div class="green-dot" style="left: 50%; animation-delay: 1.5s;"></div>
+    <div class="green-dot" style="left: 60%; animation-delay: 2.5s;"></div>
+    <div class="green-dot" style="left: 70%; animation-delay: 1.8s;"></div>
+    <div class="green-dot" style="left: 80%; animation-delay: 0.8s;"></div>
+    <div class="green-dot" style="left: 90%; animation-delay: 2.2s;"></div>
 </body>
 </html>
 
