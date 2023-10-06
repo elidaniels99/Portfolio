@@ -1,6 +1,24 @@
 # Portfolio
 
-# ELI DANIELS: DATA SCIENTIST 
+<html>
+<head>
+<style>
+.text {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.text:hover {
+  color: limegreen;
+}
+</style>
+</head>
+<body>
+
+<h1 class="text">ELI DANIELS: DATA SCIENTIST</h1>
+
+</body>
+</html>
 Data-driven entrepreneur and versatile data scientist with a proven track record of leveraging diverse skill sets to seize opportunities. Proficient in data modeling and processing, as well as programming languages including Python and SwiftUI. Procuring, cleaning and interpreting data from varying sources to create solutions and overcome challenges.
                   
 ## Skills:
@@ -62,70 +80,3 @@ UX Design Process: Empathize, Define, and Ideate
 - DBSCAN Model to compare the difference between the optimized value of K while comparing silhouette scores.
 - Random Forests Model to predict activity type for users based on their fitness and health data.
 
-<html>
-<head>
-<style>
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-30px); }
-}
-
-.ball {
-  width: 50px;
-  height: 50px;
-  background-color: red;
-  position: relative;
-  animation: bounce 2s infinite;
-}
-</style>
-</head>
-<body>
-
-<div class="ball"></div>
-
-</body>
-</html>
-
-# New One 
-
-<html>
-<head>
-<style>
-a {
-  color: #3498db;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #2980b9;
-}
-</style>
-</head>
-<body>
-
-<a href="#">Hover over me</a>
-
-</body>
-</html>
-
-# CSS Transition
-<html>
-<head>
-<style>
-.button {
-  background-color: #3498db;
-  color: white;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #2980b9;
-}
-</style>
-</head>
-<body>
-
-<button class="button">Hover me</button>
-
-</body>
-</html>
