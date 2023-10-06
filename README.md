@@ -68,39 +68,31 @@ UX Design Process: Empathize, Define, and Ideate
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScrollMagic Example</title>
+    <title>Simple HTML Animation</title>
     <style>
-        /* Define styles for animated elements */
-        .animated-element {
+        /* Define styles for the animated element */
+        .animated-square {
             width: 100px;
             height: 100px;
             background-color: blue;
-            margin: 50px auto;
+            animation: rotate 4s linear infinite; /* Apply the 'rotate' animation */
+        }
+
+        /* Define the 'rotate' animation */
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
 <body>
-    <div class="animated-element"></div>
-
-    <!-- Include ScrollMagic library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
-
-    <script>
-        // Initialize ScrollMagic controller
-        var controller = new ScrollMagic.Controller();
-
-        // Create a scene
-        new ScrollMagic.Scene({
-            triggerElement: '.animated-element', // Element that triggers the animation
-            triggerHook: 0.5, // Trigger the animation when the element is at 50% of the viewport
-            duration: '100%', // Duration of the animation
-        })
-        .setTween(TweenMax.to('.animated-element', 1, { backgroundColor: 'red' })) // TweenMax animation
-        .addIndicators({ name: 'colorChange' }) // Add indicators (for debugging)
-        .addTo(controller);
-    </script>
+    <!-- Create the animated element -->
+    <div class="animated-square"></div>
 </body>
 </html>
+
 
