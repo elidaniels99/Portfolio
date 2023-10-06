@@ -1,6 +1,6 @@
 # Portfolio
 
-## ELI DANIELS: DATA SCIENTIST 
+# ELI DANIELS: DATA SCIENTIST 
 Data-driven entrepreneur and versatile data scientist with a proven track record of leveraging diverse skill sets to seize opportunities. Proficient in data modeling and processing, as well as programming languages including Python and SwiftUI. Procuring, cleaning and interpreting data from varying sources to create solutions and overcome challenges.
 
 ## Skills:
