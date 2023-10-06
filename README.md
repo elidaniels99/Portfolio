@@ -3,78 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randomly Moving Square</title>
+    <title>Move Box on Scroll</title>
     <style>
-        .moving-square {
+        body {
+            margin: 0;
+            padding: 0;
+            height: 2000px; /* Create a tall content to enable scrolling */
+        }
+
+        .moving-box {
             width: 100px;
             height: 100px;
             background-color: red;
-            position: absolute;
-            animation: changePosition 2s linear infinite, changeColor 5s linear infinite;
-        }
-
-        @keyframes changePosition {
-            0% {
-                left: 0;
-                top: 0;
-            }
-            25% {
-                left: calc(100% - 100px);
-                top: 0;
-            }
-            50% {
-                left: calc(100% - 100px);
-                top: calc(100% - 100px);
-            }
-            75% {
-                left: 0;
-                top: calc(100% - 100px);
-            }
-            100% {
-                left: 0;
-                top: 0;
-            }
-        }
-
-        @keyframes changeColor {
-            0% {
-                background-color: red;
-            }
-            25% {
-                background-color: blue;
-            }
-            50% {
-                background-color: green;
-            }
-            75% {
-                background-color: yellow;
-            }
-            100% {
-                background-color: red;
-            }
+            position: fixed;
+            top: 0; /* Start at the top of the viewport */
+            transition: top 0.3s; /* Add smooth transition for scrolling */
         }
     </style>
 </head>
 <body>
-    <div class="moving-square"></div>
+    <div class="moving-box"></div>
 
     <script>
-        const square = document.querySelector(".moving-square");
+        const box = document.querySelector(".moving-box");
 
-        function randomPosition() {
-            const maxX = window.innerWidth - square.clientWidth;
-            const maxY = window.innerHeight - square.clientHeight;
-            const randomX = Math.random() * maxX;
-            const randomY = Math.random() * maxY;
-            square.style.left = randomX + "px";
-            square.style.top = randomY + "px";
+        // Function to update the box position based on scroll
+        function moveBoxOnScroll() {
+            const scrollY = window.scrollY;
+            box.style.top = scrollY + "px"; // Move the box down as you scroll
         }
 
-        // Initial random position
-        randomPosition();
-
-        // Update position every 2 seconds
-        setInterval(randomPosition, 2000);
+        // Add scroll event listener to trigger the movement
+        window.addEventListener("scroll", moveBoxOnScroll);
     </script>
 </body>
 </html>
