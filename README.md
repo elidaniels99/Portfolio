@@ -2,11 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrolling Green Dots</title>
+    <title>Moving Green Dots Background</title>
     <style>
         body {
             margin: 0;
             padding: 0;
+            overflow: hidden;
             background-color: black;
         }
 
@@ -28,23 +29,25 @@
             const dot = document.createElement("div");
             dot.classList.add("green-dot");
             dot.style.left = `${Math.random() * 100}vw`;
+            dot.style.top = `${Math.random() * 100}vh`;
             document.body.appendChild(dot);
 
-            // Animate the dot's vertical movement
+            // Animate the dot's movement
             dot.animate(
                 [
-                    { transform: "translateY(-100vh)" },
-                    { transform: "translateY(100vh)" },
+                    { transform: "translate(-10px, -10px)" },
+                    { transform: "translate(10px, 10px)" },
                 ],
                 {
-                    duration: 5000, // Adjust the duration as needed
+                    duration: 2000 + Math.random() * 3000, // Randomize the duration
                     iterations: Infinity,
+                    direction: "alternate", // Make it bounce back and forth
                 }
             );
         }
 
-        // Create multiple green dots
-        for (let i = 0; i < 20; i++) {
+        // Create multiple green dots to cover the viewport
+        for (let i = 0; i < 100; i++) { // You can adjust the number of dots
             createGreenDot();
         }
     </script>
@@ -131,3 +134,83 @@ UX Design Process: Empathize, Define, and Ideate
 - K-Means Clustering Model to determine how the model would classify our known classifications of underweight, normal weight, overweight, and obese for optimized value of K.
 - DBSCAN Model to compare the difference between the optimized value of K while comparing silhouette scores.
 - Random Forests Model to predict activity type for users based on their fitness and health data.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomly Moving Square</title>
+    <style>
+        .moving-square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            animation: changePosition 2s linear infinite, changeColor 5s linear infinite;
+        }
+
+        @keyframes changePosition {
+            0% {
+                left: 0;
+                top: 0;
+            }
+            25% {
+                left: calc(100% - 100px);
+                top: 0;
+            }
+            50% {
+                left: calc(100% - 100px);
+                top: calc(100% - 100px);
+            }
+            75% {
+                left: 0;
+                top: calc(100% - 100px);
+            }
+            100% {
+                left: 0;
+                top: 0;
+            }
+        }
+
+        @keyframes changeColor {
+            0% {
+                background-color: red;
+            }
+            25% {
+                background-color: blue;
+            }
+            50% {
+                background-color: green;
+            }
+            75% {
+                background-color: yellow;
+            }
+            100% {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="moving-square"></div>
+
+    <script>
+        const square = document.querySelector(".moving-square");
+
+        function randomPosition() {
+            const maxX = window.innerWidth - square.clientWidth;
+            const maxY = window.innerHeight - square.clientHeight;
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+            square.style.left = randomX + "px";
+            square.style.top = randomY + "px";
+        }
+
+        // Initial random position
+        randomPosition();
+
+        // Update position every 2 seconds
+        setInterval(randomPosition, 2000);
+    </script>
+</body>
+</html>
