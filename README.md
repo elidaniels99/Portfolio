@@ -4,12 +4,12 @@
 <head>
 <style>
 .text {
-  color: black;
+  color: green;
   transition: color 0.3s ease;
 }
 
 .text:hover {
-  color: limegreen;
+  color: red;
 }
 </style>
 </head>
@@ -19,6 +19,7 @@
 
 </body>
 </html>
+
 Data-driven entrepreneur and versatile data scientist with a proven track record of leveraging diverse skill sets to seize opportunities. Proficient in data modeling and processing, as well as programming languages including Python and SwiftUI. Procuring, cleaning and interpreting data from varying sources to create solutions and overcome challenges.
                   
 ## Skills:
@@ -79,4 +80,200 @@ UX Design Process: Empathize, Define, and Ideate
 - K-Means Clustering Model to determine how the model would classify our known classifications of underweight, normal weight, overweight, and obese for optimized value of K.
 - DBSCAN Model to compare the difference between the optimized value of K while comparing silhouette scores.
 - Random Forests Model to predict activity type for users based on their fitness and health data.
+
+$color-black: #161616;
+$color-white: #fff;
+$size: 170px; // (Fully responsive)
+
+// Cat
+.cat {
+  position: relative;
+  height: $size;
+  width: $size * 1.13;
+}
+
+// Ears
+.ear {
+  position: absolute;
+  top: -30%;
+  height: 60%;
+  width: 25%;
+  background: $color-white;
+  
+  // Ear hair
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 24%;
+    height: 10%;
+    width: 5%;
+    border-radius: 50%;
+    background: $color-black;
+  }
+  
+  &::after {
+    transform-origin: 50% 100%;
+  }
+}
+
+.ear--left {
+  left: -7%;
+  border-radius: 70% 30% 0% 0% / 100% 100% 0% 0%;
+  transform: rotate(-15deg);
+  
+  &::before,
+  &::after {
+    right: 10%;
+  }
+  
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.ear--right {
+  right: -7%;
+  border-radius: 30% 70% 0% 0% / 100% 100% 0% 0%;
+  transform: rotate(15deg);
+  
+  &::before,
+  &::after {
+    left: 10%;
+  }
+  
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
+// Face
+.face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: $color-black;
+  border-radius: 50%;
+}
+
+// Eyes
+.eye {
+  position: absolute;
+  top: 35%;
+  height: 30%;
+  width: 31%;
+  background: $color-white;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  
+  // Eyelids
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    border-radius: 0 0 50% 50% / 0 0 40% 40%;
+    background: $color-black;
+    animation: blink 4s infinite ease-in;
+  }
+  
+  @keyframes blink {
+    0% { height: 0; }
+    90% { height: 0; }
+    92.5% { height: 100%; }
+    95% { height: 0; }
+    97.5% { height: 100%; }
+    100% { height: 0; }
+  }
+  
+  // Tips of the eyes
+  &::before {
+    content: '';
+    position: absolute;
+    top: 60%;
+    height: 10%;
+    width: 15%;
+    background: $color-white;
+    border-radius: 50%;
+  }
+}
+
+.eye--left {
+  left: 0;
+  
+  &::before {
+    right: -5%;
+  }
+}
+
+.eye--right {
+  right: 0;
+  
+  &::before {
+    left: -5%;
+  }
+}
+
+// Pupils
+.eye-pupil {
+  position: absolute;
+  top: 25%;
+  height: 50%;
+  width: 20%;
+  background: $color-black;
+  border-radius: 50%;
+  animation: look-around 4s infinite;
+  
+  @keyframes look-around {
+    0% { transform: translate(0) }
+    5% { transform: translate(50%, -25%) }
+    10% { transform: translate(50%, -25%) }
+    15% { transform: translate(-100%, -25%) }
+    20% { transform: translate(-100%, -25%) }
+    25% { transform: translate(0, 0) }
+    100% { transform: translate(0, 0) }
+  }
+  
+  .eye--left & {
+    right: 30%;
+  }
+  
+  .eye--right & {
+    left: 30%;
+  }
+  
+  // Glare on the pupil
+  &::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -5%;
+    height: 20%;
+    width: 35%;
+    border-radius: 50%;
+    background: $color-white;
+  }
+}
+
+// Muzzle
+.muzzle {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  height: 6%;
+  width: 10%;
+  background: $color-white;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+}
+
+/* General page styling */
+html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-black;
+}
 
