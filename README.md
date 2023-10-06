@@ -62,3 +62,45 @@ UX Design Process: Empathize, Define, and Ideate
 - DBSCAN Model to compare the difference between the optimized value of K while comparing silhouette scores.
 - Random Forests Model to predict activity type for users based on their fitness and health data.
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollMagic Example</title>
+    <style>
+        /* Define styles for animated elements */
+        .animated-element {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-element"></div>
+
+    <!-- Include ScrollMagic library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+
+    <script>
+        // Initialize ScrollMagic controller
+        var controller = new ScrollMagic.Controller();
+
+        // Create a scene
+        new ScrollMagic.Scene({
+            triggerElement: '.animated-element', // Element that triggers the animation
+            triggerHook: 0.5, // Trigger the animation when the element is at 50% of the viewport
+            duration: '100%', // Duration of the animation
+        })
+        .setTween(TweenMax.to('.animated-element', 1, { backgroundColor: 'red' })) // TweenMax animation
+        .addIndicators({ name: 'colorChange' }) // Add indicators (for debugging)
+        .addTo(controller);
+    </script>
+</body>
+</html>
+
