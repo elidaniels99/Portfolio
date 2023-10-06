@@ -63,35 +63,59 @@ UX Design Process: Empathize, Define, and Ideate
 - Random Forests Model to predict activity type for users based on their fitness and health data.
 
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Animation</title>
+    <title>Project Description with Glowing Code Block</title>
     <style>
-        /* Define styles for the animated element */
-        .animated-square {
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            animation: rotate 4s linear infinite; /* Apply the 'rotate' animation */
+        /* Define styles for the glowing code block */
+        .glowing-code-block {
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            animation: glow 1s infinite alternate;
         }
 
-        /* Define the 'rotate' animation */
-        @keyframes rotate {
+        @keyframes glow {
             0% {
-                transform: rotate(0deg);
+                box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
             }
             100% {
-                transform: rotate(360deg);
+                box-shadow: 0 0 20px rgba(0, 255, 0, 1);
             }
         }
     </style>
 </head>
 <body>
-    <!-- Create the animated element -->
-    <div class="animated-square"></div>
+    <div class="project">
+        <div class="project-image">
+            <img src="assets/Emotion-image.jpg" alt="Emotion Recognition" width="300" height="200">
+        </div>
+        <div class="project-description">
+            <p>
+                Developed and implemented a deep learning-based emotion recognition model for facial images. Conducted data preprocessing, feature extraction, and model training using Python, TensorFlow, and Keras. Created an interactive web application using Streamlit to provide a user-friendly interface.
+            </p>
+            <!-- Glowing Code Block -->
+            <div class="glowing-code-block">
+                <pre>
+                    <code>
+                        # Python code block
+                        import tensorflow as tf
+                        from tensorflow import keras
+                        # ... your code here ...
+                    </code>
+                </pre>
+            </div>
+            <!-- End Glowing Code Block -->
+            <p><strong>Streamlit App:</strong></p>
+            <ul>
+                <li><strong>Image Emotion Recognition:</strong> Upload an image to detect and display emotions expressed in human faces. The app uses deep learning to recognize emotions like happiness, sadness, surprise, anger, disgust, neutral.</li>
+                <li><strong>Live Webcam Emotion Detection:</strong> Experience real-time emotion detection through your webcam. Toggle the webcam feed, and see your own emotions overlaid on the live video.</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
 
