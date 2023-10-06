@@ -2,11 +2,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Hacker Terminal Animation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Terminal Container -->
+    <div class="terminal">
+        <pre id="output"></pre>
+        <div id="input-container">
+            <span id="prompt">> </span>
+            <input type="text" id="input" autofocus>
+        </div>
+    </div>
 
+    <!-- Include the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
 
 # Portfolio
 
@@ -73,17 +85,28 @@ UX Design Process: Empathize, Define, and Ideate
 - Random Forests Model to predict activity type for users based on their fitness and health data.
 
 
- <div class="matrix-rain-container">
-        <div class="matrix-rain">
-            <div class="code">
-                <!-- Add your matrix rain content here -->
-            </div>
-        </div>
-    </div>
+.terminal {
+    background-color: black;
+    color: limegreen;
+    font-family: monospace;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+}
 
-    <!-- Include the JavaScript file -->
-    <script src="matrix-rain.js"></script>
-</body>
-</html>
+/* Style for the input container */
+#input-container {
+    display: flex;
+}
 
-
+/* Style for the input field */
+#input {
+    background-color: transparent;
+    border: none;
+    color: limegreen;
+    outline: none;
+    font-family: monospace;
+    font-size: 16px;
+    flex-grow: 1;
+}
