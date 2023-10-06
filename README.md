@@ -1,17 +1,28 @@
-
-- var texts = ['W', 'e', 'l', 'c', 'o', 'm', 'e', ': )'];
-- var number_of_particle = 12;
-
-- for (var i = 0; i < texts.length; i++)
-  .background(class="background" + i)
-.criterion
-  - for (var i = 0; i < texts.length; i++)
-    .text(class='text' + i) #{texts[i]}
-  - for (var i = 0; i < texts.length; i++)
-    .frame(class='frame' + i)
-  - for (var i = 0; i < texts.length; i++)
-    - for (var j = 0; j < number_of_particle; j++)
-      .particle(class="particle" + i + j)
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <link rel="stylesheet" href="your-stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background background0">
+            <div class="criterion">
+                <div class="text text0">W</div>
+                <div class="frame frame0"></div>
+                <!-- Particles -->
+                <div class="particle particle00"></div>
+                <div class="particle particle01"></div>
+                <!-- Add more particles here -->
+            </div>
+        </div>
+        <!-- Repeat for other characters and backgrounds -->
+        <!-- You can copy and modify the above structure for each character -->
+    </div>
+    <script src="your-script.js"></script>
+</body>
+</html>
 
 # Portfolio
 
