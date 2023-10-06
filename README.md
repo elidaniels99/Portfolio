@@ -1,3 +1,13 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
 # Portfolio
 
 # ELI DANIELS: DATA SCIENTIST 
@@ -61,5 +71,19 @@ UX Design Process: Empathize, Define, and Ideate
 - K-Means Clustering Model to determine how the model would classify our known classifications of underweight, normal weight, overweight, and obese for optimized value of K.
 - DBSCAN Model to compare the difference between the optimized value of K while comparing silhouette scores.
 - Random Forests Model to predict activity type for users based on their fitness and health data.
+
+
+ <div class="matrix-rain-container">
+        <div class="matrix-rain">
+            <div class="code">
+                <!-- Add your matrix rain content here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the JavaScript file -->
+    <script src="matrix-rain.js"></script>
+</body>
+</html>
 
 
