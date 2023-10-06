@@ -1,4 +1,45 @@
 # Portfolio
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Colorful Square</title>
+    <style>
+        .rotating-square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: rotateAndChangeColor 5s linear infinite;
+        }
+
+        @keyframes rotateAndChangeColor {
+            0% {
+                transform: rotate(0deg);
+                background-color: red;
+            }
+            25% {
+                transform: rotate(90deg);
+                background-color: blue;
+            }
+            50% {
+                transform: rotate(180deg);
+                background-color: green;
+            }
+            75% {
+                transform: rotate(270deg);
+                background-color: yellow;
+            }
+            100% {
+                transform: rotate(360deg);
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rotating-square"></div>
+</body>
+</html>
 
 <html>
 <head>
