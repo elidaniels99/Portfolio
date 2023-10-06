@@ -144,7 +144,7 @@ UX Design Process: Empathize, Define, and Ideate
             width: 100px;
             height: 100px;
             background-color: red;
-            position: absolute;
+            position: fixed;
             animation: changePosition 2s linear infinite, changeColor 5s linear infinite;
         }
 
@@ -209,7 +209,7 @@ UX Design Process: Empathize, Define, and Ideate
         randomPosition();
 
         // Update position every 2 seconds
-        setInterval(randomPosition, 2000);
+        setInterval(randomPosition, 4000);
     </script>
 </body>
 </html>
