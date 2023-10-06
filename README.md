@@ -79,9 +79,6 @@
 
 <h1 class="text">ELI DANIELS: DATA SCIENTIST</h1>
 
-</body>
-</html>
-
 Data-driven entrepreneur and versatile data scientist with a proven track record of leveraging diverse skill sets to seize opportunities. Proficient in data modeling and processing, as well as programming languages including Python and SwiftUI. Procuring, cleaning and interpreting data from varying sources to create solutions and overcome challenges.
                   
 ## Skills:
@@ -142,4 +139,7 @@ UX Design Process: Empathize, Define, and Ideate
 - K-Means Clustering Model to determine how the model would classify our known classifications of underweight, normal weight, overweight, and obese for optimized value of K.
 - DBSCAN Model to compare the difference between the optimized value of K while comparing silhouette scores.
 - Random Forests Model to predict activity type for users based on their fitness and health data.
+
+</body>
+</html>
 
