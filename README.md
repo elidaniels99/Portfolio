@@ -59,15 +59,17 @@
         <div class="shooting-star" style="--randomX: 0.8; --randomY: 0.5;"></div>
         <div class="shooting-star" style="--randomX: 0.4; --randomY: 0.7;"></div>
         <div class="shooting-star" style="--randomX: 0.6; --randomY: 0.9;"></div>
+        
+        <!-- Add more shooting stars with different positions -->
         <div class="shooting-star" style="--randomX: 0.1; --randomY: 0.6;"></div>
         <div class="shooting-star" style="--randomX: 0.9; --randomY: 0.4;"></div>
         <div class="shooting-star" style="--randomX: 0.3; --randomY: 0.8;"></div>
         <div class="shooting-star" style="--randomX: 0.7; --randomY: 0.1;"></div>
         <div class="shooting-star" style="--randomX: 0.2; --randomY: 0.7;"></div>
+        <!-- Add even more shooting stars -->
     </div>
 </body>
 </html>
-
 # Portfolio
 
 <html>
