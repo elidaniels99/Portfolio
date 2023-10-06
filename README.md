@@ -1,81 +1,77 @@
-# Portfolio
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randomly Moving Square</title>
+    <title>Green Shooting Stars</title>
     <style>
-        .moving-square {
-            width: 100px;
-            height: 100px;
-            background-color: red;
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .shooting-star {
             position: absolute;
-            animation: changePosition 2s linear infinite, changeColor 5s linear infinite;
+            width: 10px;
+            height: 10px;
+            background-color: green;
+            border-radius: 50%;
+            opacity: 0;
+            animation: shootingStar 3s linear infinite;
         }
 
-        @keyframes changePosition {
+        @keyframes shootingStar {
             0% {
-                left: 0;
-                top: 0;
-            }
-            25% {
-                left: calc(100% - 100px);
-                top: 0;
-            }
-            50% {
-                left: calc(100% - 100px);
-                top: calc(100% - 100px);
-            }
-            75% {
-                left: 0;
-                top: calc(100% - 100px);
+                opacity: 1;
+                transform: translateX(0) translateY(0) scale(1);
             }
             100% {
-                left: 0;
-                top: 0;
+                opacity: 0;
+                transform: translateX(100vw) translateY(-100vh) scale(0.2);
             }
         }
 
-        @keyframes changeColor {
+        /* Generate random shooting stars */
+        @keyframes randomShootingStars {
             0% {
-                background-color: red;
-            }
-            25% {
-                background-color: blue;
-            }
-            50% {
-                background-color: green;
-            }
-            75% {
-                background-color: yellow;
+                transform: translateX(0) translateY(0) scale(1);
             }
             100% {
-                background-color: red;
+                transform: translateX(calc(100vw * var(--randomX))) translateY(calc(-100vh * var(--randomY))) scale(0.2);
             }
+        }
+
+        /* Create multiple shooting stars with random positions */
+        .shooting-stars-container {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            animation: randomShootingStars 5s linear infinite;
         }
     </style>
 </head>
 <body>
-    <div class="moving-square"></div>
-
-    <script>
-        const square = document.querySelector(".moving-square");
-
-        function randomPosition() {
-            const maxX = window.innerWidth - square.clientWidth;
-            const maxY = window.innerHeight - square.clientHeight;
-            const randomX = Math.random() * maxX;
-            const randomY = Math.random() * maxY;
-            square.style.left = randomX + "px";
-            square.style.top = randomY + "px";
-        }
-
-        // Initial random position
-        randomPosition();
-
-        // Update position every 2 seconds
-        setInterval(randomPosition, 2000);
-    </script>
+    <div class="shooting-stars-container">
+        <div class="shooting-star" style="--randomX: 0.2; --randomY: 0.1;"></div>
+        <div class="shooting-star" style="--randomX: 0.7; --randomY: 0.3;"></div>
+        <div class="shooting-star" style="--randomX: 0.5; --randomY: 0.4;"></div>
+        <!-- Add more shooting stars with different positions -->
+        <div class="shooting-star" style="--randomX: 0.3; --randomY: 0.2;"></div>
+        <div class="shooting-star" style="--randomX: 0.8; --randomY: 0.5;"></div>
+        <div class="shooting-star" style="--randomX: 0.4; --randomY: 0.7;"></div>
+        <div class="shooting-star" style="--randomX: 0.6; --randomY: 0.9;"></div>
+        <div class="shooting-star" style="--randomX: 0.1; --randomY: 0.6;"></div>
+        <div class="shooting-star" style="--randomX: 0.9; --randomY: 0.4;"></div>
+        <div class="shooting-star" style="--randomX: 0.3; --randomY: 0.8;"></div>
+        <div class="shooting-star" style="--randomX: 0.7; --randomY: 0.1;"></div>
+        <div class="shooting-star" style="--randomX: 0.2; --randomY: 0.7;"></div>
+        <div class="shooting-star" style="--randomX: 0.4; --randomY: 0.2;"></div>
+        <div class="shooting-star" style="--randomX: 0.6; --randomY: 0.5;"></div>
+        <div class="shooting-star" style="--randomX: 0.8; --randomY: 0.9;"></div>
+        <div class="shooting-star" style="--randomX: 0.1; --randomY: 0.4;"></div>
+        <div class="shooting-star" style="--randomX: 0.5; --randomY: 0.7;"></div>
+        <div class="shooting-star" style="--randomX: 0.3; --randomY: 0.6;"></div>
+    </div>
 </body>
 </html>
 
@@ -115,85 +111,6 @@ IBM Data Science Professional: Python for Data Science, AI & Development
 Databases and SQL for Data Science with Python 
 - - - -
 UX Design Process: Empathize, Define, and Ideate 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randomly Moving Square</title>
-    <style>
-        .moving-square {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: absolute;
-            animation: changePosition 2s linear infinite, changeColor 5s linear infinite;
-        }
-
-        @keyframes changePosition {
-            0% {
-                left: 0;
-                top: 0;
-            }
-            25% {
-                left: calc(100% - 100px);
-                top: 0;
-            }
-            50% {
-                left: calc(100% - 100px);
-                top: calc(100% - 100px);
-            }
-            75% {
-                left: 0;
-                top: calc(100% - 100px);
-            }
-            100% {
-                left: 0;
-                top: 0;
-            }
-        }
-
-        @keyframes changeColor {
-            0% {
-                background-color: red;
-            }
-            25% {
-                background-color: blue;
-            }
-            50% {
-                background-color: green;
-            }
-            75% {
-                background-color: yellow;
-            }
-            100% {
-                background-color: red;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="moving-square"></div>
-
-    <script>
-        const square = document.querySelector(".moving-square");
-
-        function randomPosition() {
-            const maxX = window.innerWidth - square.clientWidth;
-            const maxY = window.innerHeight - square.clientHeight;
-            const randomX = Math.random() * maxX;
-            const randomY = Math.random() * maxY;
-            square.style.left = randomX + "px";
-            square.style.top = randomY + "px";
-        }
-
-        // Initial random position
-        randomPosition();
-
-        // Update position every 2 seconds
-        setInterval(randomPosition, 2000);
-    </script>
-</body>
-</html>
 
 ## [Emotion Recognition using Deep Learning](https://github.com/elidaniels99/Emotion_Recognition){:target="_blank" style="color: white;"}
 <div class="project">
