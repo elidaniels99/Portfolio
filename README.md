@@ -19,16 +19,16 @@
                 top: 0;
             }
             25% {
-                left: 75%;
+                left: calc(100% - 100px);
                 top: 0;
             }
             50% {
-                left: 75%;
-                top: 75%;
+                left: calc(100% - 100px);
+                top: calc(100% - 100px);
             }
             75% {
                 left: 0;
-                top: 75%;
+                top: calc(100% - 100px);
             }
             100% {
                 left: 0;
