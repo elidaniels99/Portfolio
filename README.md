@@ -85,25 +85,71 @@ UX Design Process: Empathize, Define, and Ideate
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Title Here</title>
-    <link rel="stylesheet" href="your-stylesheet.css">
+    <title>Portfolio</title>
+    <style>
+        /* Your existing CSS styles here */
+
+        /* Parallax background */
+        .parallax {
+            background-image: url('your-background-image.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        /* Content container with background color */
+        .content-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity */
+            color: white;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="background background0">
-            <div class="criterion">
-                <div class="text text0">W</div>
-                <div class="frame frame0"></div>
-                <!-- Particles -->
-                <div class="particle particle00"></div>
-                <div class="particle particle01"></div>
-                <!-- Add more particles here -->
-            </div>
+    <!-- Parallax section -->
+    <div class="parallax">
+        <!-- Content container -->
+        <div class="content-container">
+            <!-- Your portfolio content here -->
+            <h1>ELI DANIELS: DATA SCIENTIST</h1>
+            
+            <!-- Rest of your portfolio content -->
+
+            <!-- Navigation links with smooth scrolling -->
+            <nav>
+                <ul>
+                    <li><a href="#section-skills" data-scroll>Skills</a></li>
+                    <li><a href="#section-software" data-scroll>Software</a></li>
+                    <li><a href="#section-certifications" data-scroll>Certifications</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </nav>
         </div>
-        <!-- Repeat for other characters and backgrounds -->
-        <!-- You can copy and modify the above structure for each character -->
     </div>
-    <script src="your-script.js"></script>
+
+    <!-- Sections with content and corresponding IDs -->
+    <div id="section-skills">
+        <!-- Skills section content here -->
+    </div>
+    <div id="section-software">
+        <!-- Software section content here -->
+    </div>
+    <div id="section-certifications">
+        <!-- Certifications section content here -->
+    </div>
+
+    <!-- Include the smooth-scroll.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+    
+    <!-- Initialize smooth-scroll.js -->
+    <script>
+        var scroll = new SmoothScroll('a[data-scroll]', {
+            speed: 1000, // Adjust the scrolling speed as needed
+            offset: 50, // Offset for scroll position (e.g., for fixed headers)
+        });
+    </script>
 </body>
 </html>
 
