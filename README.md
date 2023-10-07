@@ -2,48 +2,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Animation</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-        }
-
-        .welcome-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 24px;
-            color: white;
-            opacity: 0; /* Initially, set opacity to 0 */
-            transition: opacity 2s ease; /* Add a transition for opacity */
-        }
-
-        /* Add animation when the page loads */
-        .welcome-animation .welcome-text {
-            opacity: 1; /* Change opacity to 1 for the animation */
-        }
-    </style>
-</head>
-<body>
-    <div class="welcome-text">Welcome to My Website</div>
-
-    <script>
-        // Add a class to trigger the welcome animation
-        document.addEventListener("DOMContentLoaded", function() {
-            const welcomeText = document.querySelector(".welcome-text");
-            welcomeText.classList.add("welcome-animation");
-        });
-    </script>
-</body>
-</html>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moving Green Dots Background</title>
     <style>
         body {
