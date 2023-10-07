@@ -4,61 +4,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fireworks Animation</title>
     <style>
-        /* Styles for the fireworks container */
-        .fireworks-container {
+        /* Style the canvas */
+        canvas {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
             pointer-events: none;
-            z-index: 9999;
-        }
-
-        /* Styles for a single firework */
-        .firework {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: #FFD700; /* Firework color (gold) */
-            border-radius: 50%;
-            opacity: 0;
-            animation: explode 1s ease-out forwards;
-        }
-
-        @keyframes explode {
-            to {
-                transform: translateY(-1000px) scale(2);
-                opacity: 0;
-            }
         }
     </style>
 </head>
 <body>
     <button class="button" id="fireButton">Launch Fireworks</button>
-    <div class="fireworks-container" id="fireworksContainer"></div>
+    <canvas id="fireworksCanvas"></canvas>
 
     <script>
-        const fireworksContainer = document.getElementById("fireworksContainer");
+        const fireworksCanvas = document.getElementById("fireworksCanvas");
+        const ctx = fireworksCanvas.getContext("2d");
         const fireButton = document.getElementById("fireButton");
 
-        function createFirework() {
-            const firework = document.createElement("div");
-            firework.classList.add("firework");
-            firework.style.left = `${Math.random() * 100}vw`;
-            fireworksContainer.appendChild(firework);
-
-            // Remove the firework element after the animation completes
-            firework.addEventListener("animationend", () => {
-                firework.remove();
-            });
+        function createFirework(x, y) {
+            // Your fireworks drawing logic here
+            // For simplicity, I'll draw a basic circle
+            ctx.beginPath();
+            ctx.arc(x, y, 5, 0, Math.PI * 2);
+            ctx.fillStyle = "#FFD700"; // Firework color (gold)
+            ctx.fill();
+            ctx.closePath();
         }
 
         fireButton.addEventListener("click", () => {
-            // Launch multiple fireworks
-            for (let i = 0; i < 10; i++) {
-                setTimeout(createFirework, i * 200);
-            }
+            // Launch a firework at a random position
+            const x = Math.random() * fireworksCanvas.width;
+            const y = Math.random() * fireworksCanvas.height;
+
+            createFirework(x, y);
         });
     </script>
 </body>
