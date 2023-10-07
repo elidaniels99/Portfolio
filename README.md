@@ -7,7 +7,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: white;
+            background-color: black;
         }
 
         /* Create a class for the green dot */
