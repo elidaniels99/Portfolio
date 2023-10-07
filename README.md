@@ -2,6 +2,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireworks Animation</title>
+    <style>
+        /* Styles for the fireworks container */
+        .fireworks-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        /* Styles for a single firework */
+        .firework {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #FFD700; /* Firework color (gold) */
+            border-radius: 50%;
+            opacity: 0;
+            animation: explode 1s ease-out forwards;
+        }
+
+        @keyframes explode {
+            to {
+                transform: translateY(-1000px) scale(2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="button" id="fireButton">Launch Fireworks</button>
+    <div class="fireworks-container" id="fireworksContainer"></div>
+
+    <script>
+        const fireworksContainer = document.getElementById("fireworksContainer");
+        const fireButton = document.getElementById("fireButton");
+
+        function createFirework() {
+            const firework = document.createElement("div");
+            firework.classList.add("firework");
+            firework.style.left = `${Math.random() * 100}vw`;
+            fireworksContainer.appendChild(firework);
+
+            // Remove the firework element after the animation completes
+            firework.addEventListener("animationend", () => {
+                firework.remove();
+            });
+        }
+
+        fireButton.addEventListener("click", () => {
+            // Launch multiple fireworks
+            for (let i = 0; i < 10; i++) {
+                setTimeout(createFirework, i * 200);
+            }
+        });
+    </script>
+</body>
+</html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moving Green Dots Background</title>
     <style>
         body {
@@ -210,72 +276,6 @@ UX Design Process: Empathize, Define, and Ideate
 
         // Update position every 5 seconds for a slower movement
         setInterval(randomPosition, 5000);
-    </script>
-</body>
-</html>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fireworks Animation</title>
-    <style>
-        /* Styles for the fireworks container */
-        .fireworks-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9999;
-        }
-
-        /* Styles for a single firework */
-        .firework {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: #FFD700; /* Firework color (gold) */
-            border-radius: 50%;
-            opacity: 0;
-            animation: explode 1s ease-out forwards;
-        }
-
-        @keyframes explode {
-            to {
-                transform: translateY(-1000px) scale(2);
-                opacity: 0;
-            }
-        }
-    </style>
-</head>
-<body>
-    <button class="button" id="fireButton">Launch Fireworks</button>
-    <div class="fireworks-container" id="fireworksContainer"></div>
-
-    <script>
-        const fireworksContainer = document.getElementById("fireworksContainer");
-        const fireButton = document.getElementById("fireButton");
-
-        function createFirework() {
-            const firework = document.createElement("div");
-            firework.classList.add("firework");
-            firework.style.left = `${Math.random() * 100}vw`;
-            fireworksContainer.appendChild(firework);
-
-            // Remove the firework element after the animation completes
-            firework.addEventListener("animationend", () => {
-                firework.remove();
-            });
-        }
-
-        fireButton.addEventListener("click", () => {
-            // Launch multiple fireworks
-            for (let i = 0; i < 10; i++) {
-                setTimeout(createFirework, i * 200);
-            }
-        });
     </script>
 </body>
 </html>
