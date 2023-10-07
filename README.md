@@ -2,51 +2,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fireworks Animation</title>
-    <style>
-        /* Style the canvas */
-        canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-        }
-    </style>
-</head>
-<body>
-    <button class="button" id="fireButton">Launch Fireworks</button>
-    <canvas id="fireworksCanvas"></canvas>
-
-    <script>
-        const fireworksCanvas = document.getElementById("fireworksCanvas");
-        const ctx = fireworksCanvas.getContext("2d");
-        const fireButton = document.getElementById("fireButton");
-
-        function createFirework(x, y) {
-            // Your fireworks drawing logic here
-            // For simplicity, I'll draw a basic circle
-            ctx.beginPath();
-            ctx.arc(x, y, 5, 0, Math.PI * 2);
-            ctx.fillStyle = "#FFD700"; // Firework color (gold)
-            ctx.fill();
-            ctx.closePath();
-        }
-
-        fireButton.addEventListener("click", () => {
-            // Launch a firework at a random position
-            const x = Math.random() * fireworksCanvas.width;
-            const y = Math.random() * fireworksCanvas.height;
-
-            createFirework(x, y);
-        });
-    </script>
-</body>
-</html>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moving Green Dots Background</title>
     <style>
         body {
