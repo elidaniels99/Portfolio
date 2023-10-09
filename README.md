@@ -35,7 +35,7 @@
     <!-- Tabs for LinkedIn and Resume -->
     <div class="tabs">
         <a class="tab" href="https://www.linkedin.com/in/elidaniels/" target="_blank">LinkedIn</a>
-        <a class="tab" href="https://github.com/yourusername/yourrepository/raw/main/Eli Daniels Résumé.pdf" download>Resume (PDF)</a>
+        <a href="Eli Daniels Résumé.pdf" download="Eli_Daniels_Resume.pdf"><strong>Download Resume</strong></a>
     </div>
 
     <!-- Your content here -->
