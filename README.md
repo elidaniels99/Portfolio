@@ -32,14 +32,6 @@
             }
         }
     </style>
-    .text {
-  color: green;
-  transition: color 0.3s ease;
-}
-
-.text:hover {
-  color: red;
-}
 </head>
 <body>
     <!-- Your content here -->
