@@ -9,17 +9,27 @@
             text-align: center;
             font-size: 36px;
             padding: 20px;
-            animation: titleAnimation 2s ease-in-out infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid green; /* Cursor effect */
+            animation: typing 2s steps(40) forwards, blink-caret 0.5s step-end infinite;
         }
 
-        @keyframes titleAnimation {
-            0% {
-                transform: scale(1);
-                color: green;
+        @keyframes typing {
+            from {
+                width: 0;
             }
-            100% {
-                transform: scale(1.2);
-                color: red;
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: green;
             }
         }
     </style>
