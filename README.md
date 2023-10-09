@@ -19,7 +19,7 @@
         .tab {
             margin: 0 10px;
             padding: 5px 10px;
-            color: #333; /* Change text color */
+            color: #888; /* Change text color */
             cursor: pointer;
             text-decoration: none;
             border-radius: 5px;
@@ -35,7 +35,7 @@
     <!-- Tabs for LinkedIn and Resume -->
     <div class="tabs">
         <a class="tab" href="https://www.linkedin.com/in/elidaniels/" target="_blank">LinkedIn</a>
-        <a class="tab" href="Eli_Daniels_Resume.pdf" download>Resume (PDF)</a> <!-- Specify the PDF file name -->
+        <a class="tab" href="https://github.com/yourusername/yourrepository/raw/main/Eli Daniels Résumé.pdf" download>Resume (PDF)</a>
     </div>
 
     <!-- Your content here -->
