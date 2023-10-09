@@ -2,7 +2,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
     <style>
         /* Your CSS styles here */
         .title {
@@ -33,6 +32,14 @@
             }
         }
     </style>
+    .text {
+  color: green;
+  transition: color 0.3s ease;
+}
+
+.text:hover {
+  color: red;
+}
 </head>
 <body>
     <!-- Your content here -->
@@ -95,25 +102,6 @@
 </body>
 </html>
 
-<html>
-<head>
-<style>
-.text {
-  color: green;
-  transition: color 0.3s ease;
-}
-
-.text:hover {
-  color: red;
-}
-</style>
-</head>
-<body>
-
-<h1 class="text">ELI DANIELS: DATA SCIENTIST</h1>
-
-</body>
-</html>
 
 Data-driven entrepreneur and versatile data scientist with a proven track record of leveraging diverse skill sets to seize opportunities. Proficient in data modeling and processing, as well as programming languages including Python and SwiftUI. Procuring, cleaning and interpreting data from varying sources to create solutions and overcome challenges.
                   
