@@ -10,10 +10,10 @@
 </head>
 <body>
     <!-- Add a link to download your resume at the top -->
-    <a href="EliDanielsResume.pdf" download><strong>Download Resume</strong></a>
+    <a href="Eli Daniels Résumé.pdf" download><strong>Download Resume</strong></a>
 
     <!-- Your content here -->
-    <h1 class="text">ELI DANIELS: DATA SCIENTIST</h1>
+    <!-- Remove the duplicate title from here -->
     <!-- More content... -->
 </body>
 </html>
