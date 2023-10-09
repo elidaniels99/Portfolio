@@ -36,6 +36,7 @@
     <div class="tabs">
         <a class="tab" href="https://www.linkedin.com/in/elidaniels/" target="_blank">LinkedIn</a>
         <a href="Eli Daniels Résumé.pdf" download="Eli Daniels Résumé.pdf"><strong>Download Resume</strong></a>
+        <a href= "https://github.com/elidaniels99/Portfolio/main/Eli Daniels Résumé.pdf" download><strong>Download Resume</strong></a>
     </div>
 
     <!-- Your content here -->
