@@ -4,43 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELI DANIELS: DATA SCIENTIST</title>
     <!-- Your CSS styles here -->
-    <style>
-        /* Your CSS styles here */
-
-        /* Style for the tabs */
-        .tabs {
-            display: flex;
-            background-color: transparent; /* Remove background color */
-            padding: 10px;
-            justify-content: center;
-        }
-
-        /* Style for each tab */
-        .tab {
-            margin: 0 10px;
-            padding: 5px 10px;
-            color: #888; /* Change text color */
-            cursor: pointer;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .tab:hover {
-            background-color: #eee; /* Change hover background color */
-        }
-    </style>
 </head>
 <body>
-    <!-- Tabs for LinkedIn and Resume -->
-    <div class="tabs">
-        <a class="tab" href="https://www.linkedin.com/in/elidaniels/" target="_blank">LinkedIn</a>
-        <a href="Eli Daniels Résumé.pdf" download="Eli Daniels Résumé.pdf"><strong>Download Resume</strong></a>
-        <a href= "https://github.com/elidaniels99/Portfolio/main/Eli Daniels Résumé.pdf" download><strong>Download Resume</strong></a>
-    </div>
-
     <!-- Your content here -->
-    <!-- ... -->
 </body>
 </html>
 
