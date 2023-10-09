@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELI DANIELS: DATA SCIENTIST</title>
+  
     <style>
         /* Your CSS styles here */
         .title {
