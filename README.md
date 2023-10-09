@@ -1,5 +1,25 @@
 <html lang="en">
 <head>
+    <!-- Your head content here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELI DANIELS: DATA SCIENTIST</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <!-- Add a link to download your resume at the top -->
+    <a href="Eli Daniels Résumé.pdf" download><strong>Download Resume</strong></a>
+
+    <!-- Your content here -->
+    <h1 class="text">ELI DANIELS: DATA SCIENTIST</h1>
+    <!-- More content... -->
+</body>
+</html>
+
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moving Green Dots Background</title>
