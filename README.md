@@ -3,10 +3,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELI DANIELS: DATA SCIENTIST</title>
-    <!-- Your CSS styles here -->
+    <style>
+        /* Your CSS styles here */
+        .title {
+            text-align: center;
+            font-size: 36px;
+            padding: 20px;
+            animation: titleAnimation 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleAnimation {
+            0% {
+                transform: scale(1);
+                color: green;
+            }
+            100% {
+                transform: scale(1.2);
+                color: red;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Your content here -->
+    <h1 class="title">ELI DANIELS: DATA SCIENTIST</h1>
 </body>
 </html>
 
