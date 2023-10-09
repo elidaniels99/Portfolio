@@ -35,6 +35,8 @@
     </style>
 </head>
 <body>
+    <!-- Your content here -->
+    <h1 class="title">ELI DANIELS: DATA SCIENTIST</h1>
 </body>
 </html>
 
