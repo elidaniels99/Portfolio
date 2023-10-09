@@ -10,7 +10,7 @@
         /* Style for the tabs */
         .tabs {
             display: flex;
-            background-color: #333;
+            background-color: transparent; /* Remove background color */
             padding: 10px;
             justify-content: center;
         }
@@ -19,7 +19,7 @@
         .tab {
             margin: 0 10px;
             padding: 5px 10px;
-            color: #fff;
+            color: #333; /* Change text color */
             cursor: pointer;
             text-decoration: none;
             border-radius: 5px;
@@ -27,16 +27,15 @@
         }
 
         .tab:hover {
-            background-color: #555;
+            background-color: #eee; /* Change hover background color */
         }
     </style>
 </head>
 <body>
-    <!-- Tabs for About Me, LinkedIn, and Resume -->
+    <!-- Tabs for LinkedIn and Resume -->
     <div class="tabs">
-        <a class="tab" href="#about-me">About Me</a>
         <a class="tab" href="https://www.linkedin.com/in/elidaniels/" target="_blank">LinkedIn</a>
-        <a class="tab" href="Eli Daniels Résumé.pdf" download>Resume</a>
+        <a class="tab" href="Eli_Daniels_Resume.pdf" download>Resume (PDF)</a> <!-- Specify the PDF file name -->
     </div>
 
     <!-- Your content here -->
