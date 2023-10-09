@@ -1,28 +1,12 @@
 <html lang="en">
 <head>
-    <!-- Your head content here -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELI DANIELS: DATA SCIENTIST</title>
-    <style>
-        /* Your CSS styles here */
-    </style>
+    <!-- Your CSS styles here -->
 </head>
 <body>
-    <header>
-        <!-- You can add your header content here, such as navigation links -->
-    </header>
-
-    <!-- Add a link to download your resume at the desired location -->
-    <a href="Eli_Daniels_Resume.pdf" download>Download Resume (PDF)</a>
-
     <!-- Your content here -->
-    <h1 class="text">ELI DANIELS: DATA SCIENTIST</h1>
-    <!-- More content... -->
-
-    <footer>
-        <!-- You can add your footer content here, such as contact information -->
-    </footer>
 </body>
 </html>
 
