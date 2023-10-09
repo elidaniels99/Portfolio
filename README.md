@@ -9,12 +9,7 @@
     </style>
 </head>
 <body>
-    <!-- Add a link to download your resume at the top -->
-    <a href="Eli Daniels Résumé.pdf" download><strong>Download Resume</strong></a>
-
-    <!-- Your content here -->
-    <!-- Remove the duplicate title from here -->
-    <!-- More content... -->
+  <a href="Eli_Daniels_Resume.pdf" download>Download Resume (PDF)</a>
 </body>
 </html>
 
