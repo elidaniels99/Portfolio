@@ -9,7 +9,20 @@
     </style>
 </head>
 <body>
-  <a href="Eli_Daniels_Resume.pdf" download>Download Resume (PDF)</a>
+    <header>
+        <!-- You can add your header content here, such as navigation links -->
+    </header>
+
+    <!-- Add a link to download your resume at the desired location -->
+    <a href="Eli_Daniels_Resume.pdf" download>Download Resume (PDF)</a>
+
+    <!-- Your content here -->
+    <h1 class="text">ELI DANIELS: DATA SCIENTIST</h1>
+    <!-- More content... -->
+
+    <footer>
+        <!-- You can add your footer content here, such as contact information -->
+    </footer>
 </body>
 </html>
 
