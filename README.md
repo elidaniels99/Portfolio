@@ -43,72 +43,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swimming Fish Background</title>
+    <title>Glowing Firefly-like Particles Background</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #3498db; /* Background color (blue) */
+            background-color: black; /* Background color (black) */
             
         }
 
-        /* Create a class for the fish */
-        .fish {
+        /* Create a class for the particles */
+        .particle {
             position: fixed;
-            width: 50px;
-            height: 30px;
-            background-color: #e74c3c; /* Fish color (red) */
-            border-radius: 50% 50% 0 0;
-            transform-origin: center bottom;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+            border-radius: 50%;
             pointer-events: none; /* Allow cursor to interact with elements underneath */
+            animation: moveParticle 5s infinite alternate, glow 2s infinite alternate;
+        }
+
+        @keyframes moveParticle {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(30px, 30px); /* Adjust particle movement range */
+            }
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Initial glow effect */
+            }
+            100% {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Stronger glow effect */
+            }
         }
     </style>
 </head>
 <body>
-    <!-- JavaScript to create and move fish -->
+    <!-- JavaScript to create and move particles -->
     <script>
-        // Function to create a fish at a random position
-        function createFish() {
-            const fish = document.createElement("div");
-            fish.classList.add("fish");
-            fish.style.left = `${Math.random() * 100}vw`;
-            fish.style.top = `${Math.random() * 100}vh`;
-            document.body.appendChild(fish);
-
-            // Animate the fish's movement
-            fish.animate(
-                [
-                    { transform: "scaleX(1)" },
-                    { transform: "scaleX(-1)" },
-                ],
-                {
-                    duration: 2000 + Math.random() * 3000, // Randomize the duration
-                    iterations: Infinity,
-                    direction: "alternate", // Make it change direction back and forth
-                }
-            );
+        // Function to create a particle at a random position
+        function createParticle() {
+            const particle = document.createElement("div");
+            particle.classList.add("particle");
+            particle.style.left = `${Math.random() * 100}vw`;
+            particle.style.top = `${Math.random() * 100}vh`;
+            document.body.appendChild(particle);
         }
 
-        // Create multiple fish to cover the viewport
-        for (let i = 0; i < 10; i++) { // You can adjust the number of fish
-            createFish();
+        // Create multiple particles to cover the viewport
+        for (let i = 0; i < 100; i++) { // You can adjust the number of particles
+            createParticle();
         }
-
-        // Add event listener to move fish in reaction to cursor
-        document.addEventListener("mousemove", (e) => {
-            const fishList = document.querySelectorAll(".fish");
-            fishList.forEach((fish) => {
-                const fishRect = fish.getBoundingClientRect();
-                const fishX = fishRect.left + fishRect.width / 2;
-                const fishY = fishRect.top + fishRect.height / 2;
-                const deltaX = e.clientX - fishX;
-                const deltaY = e.clientY - fishY;
-                const angle = Math.atan2(deltaY, deltaX);
-                const degrees = (angle * 180) / Math.PI;
-
-                fish.style.transform = `rotate(${degrees}deg) scaleX(-1)`;
-            });
-        });
     </script>
 </body>
 </html>
