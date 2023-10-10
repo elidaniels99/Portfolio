@@ -43,63 +43,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floating Bubbles Background</title>
+    <title>Swimming Fish Background</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             background-color: #3498db; /* Background color (blue) */
-            overflow: hidden; /* Hide overflowing bubbles */
+            
         }
 
-        /* Create a class for the bubbles */
-        .bubble {
+        /* Create a class for the fish */
+        .fish {
             position: fixed;
-            width: 20px;
-            height: 20px;
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
-            border-radius: 50%;
+            width: 50px;
+            height: 30px;
+            background-color: #e74c3c; /* Fish color (red) */
+            border-radius: 50% 50% 0 0;
+            transform-origin: center bottom;
             pointer-events: none; /* Allow cursor to interact with elements underneath */
         }
     </style>
 </head>
 <body>
-    <!-- JavaScript to create and move bubbles -->
+    <!-- JavaScript to create and move fish -->
     <script>
-        // Function to create a bubble at a random position
-        function createBubble() {
-            const bubble = document.createElement("div");
-            bubble.classList.add("bubble");
-            bubble.style.left = `${Math.random() * 100}vw`;
-            bubble.style.top = `${Math.random() * 100}vh`;
-            document.body.appendChild(bubble);
+        // Function to create a fish at a random position
+        function createFish() {
+            const fish = document.createElement("div");
+            fish.classList.add("fish");
+            fish.style.left = `${Math.random() * 100}vw`;
+            fish.style.top = `${Math.random() * 100}vh`;
+            document.body.appendChild(fish);
 
-            // Animate the bubble's movement
-            bubble.animate(
+            // Animate the fish's movement
+            fish.animate(
                 [
-                    { transform: "translate(0, 0)" },
-                    { transform: "translate(0, 0)" },
+                    { transform: "scaleX(1)" },
+                    { transform: "scaleX(-1)" },
                 ],
                 {
                     duration: 2000 + Math.random() * 3000, // Randomize the duration
                     iterations: Infinity,
-                    direction: "alternate", // Make it bounce back and forth
+                    direction: "alternate", // Make it change direction back and forth
                 }
             );
         }
 
-        // Create multiple bubbles to cover the viewport
-        for (let i = 0; i < 100; i++) { // You can adjust the number of bubbles
-            createBubble();
+        // Create multiple fish to cover the viewport
+        for (let i = 0; i < 10; i++) { // You can adjust the number of fish
+            createFish();
         }
 
-        // Add event listener to move bubbles in reaction to cursor
+        // Add event listener to move fish in reaction to cursor
         document.addEventListener("mousemove", (e) => {
-            const bubbles = document.querySelectorAll(".bubble");
-            bubbles.forEach((bubble) => {
-                const deltaX = e.clientX - bubble.getBoundingClientRect().left - bubble.clientWidth / 2;
-                const deltaY = e.clientY - bubble.getBoundingClientRect().top - bubble.clientHeight / 2;
-                bubble.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+            const fishList = document.querySelectorAll(".fish");
+            fishList.forEach((fish) => {
+                const fishRect = fish.getBoundingClientRect();
+                const fishX = fishRect.left + fishRect.width / 2;
+                const fishY = fishRect.top + fishRect.height / 2;
+                const deltaX = e.clientX - fishX;
+                const deltaY = e.clientY - fishY;
+                const angle = Math.atan2(deltaY, deltaX);
+                const degrees = (angle * 180) / Math.PI;
+
+                fish.style.transform = `rotate(${degrees}deg) scaleX(-1)`;
             });
         });
     </script>
