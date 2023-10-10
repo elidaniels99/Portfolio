@@ -43,45 +43,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moving Random Code Background</title>
+    <title>Moving Stars Background</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             background-color: black;
-            overflow: hidden; /* Hide overflowing code elements */
         }
 
-        /* Create a class for the random code element */
-        .random-code {
+        /* Create a class for the stars */
+        .star {
             position: fixed;
-            font-family: monospace;
-            font-size: 16px;
-            color: green;
+            width: 2px;
+            height: 2px;
+            background-color: white;
+            border-radius: 100%;
         }
     </style>
 </head>
 <body>
-    <!-- JavaScript to create and move random code elements -->
+    <!-- JavaScript to create and move stars -->
     <script>
-        // Function to create a random code element at a random position
-        function createRandomCode() {
-            const codeElement = document.createElement("div");
-            codeElement.classList.add("random-code");
+        // Function to create a star at a random position
+        function createStar() {
+            const star = document.createElement("div");
+            star.classList.add("star");
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.top = `${Math.random() * 100}vh`;
+            document.body.appendChild(star);
 
-            // Generate random code content (you can customize this)
-            const codeContent = Math.random().toString(36).substring(2, 10);
-
-            codeElement.textContent = codeContent;
-            codeElement.style.left = `${Math.random() * 100}vw`;
-            codeElement.style.top = `${Math.random() * 100}vh`;
-            document.body.appendChild(codeElement);
-
-            // Animate the code element's movement
-            codeElement.animate(
+            // Animate the star's movement
+            star.animate(
                 [
-                    { transform: "translate(-10px, -10px)" },
-                    { transform: "translate(10px, 10px)" },
+                    { transform: "translate(-2px, -2px)" },
+                    { transform: "translate(2px, 2px)" },
                 ],
                 {
                     duration: 2000 + Math.random() * 3000, // Randomize the duration
@@ -91,9 +86,9 @@
             );
         }
 
-        // Create multiple random code elements to cover the viewport
-        for (let i = 0; i < 100; i++) { // You can adjust the number of elements
-            createRandomCode();
+        // Create multiple stars to cover the viewport
+        for (let i = 0; i < 100; i++) { // You can adjust the number of stars
+            createStar();
         }
     </script>
 </body>
