@@ -43,40 +43,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moving Stars Background</title>
+    <title>Floating Bubbles Background</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: black;
+            background-color: #3498db; /* Background color (blue) */
+            overflow: hidden; /* Hide overflowing bubbles */
         }
 
-        /* Create a class for the stars */
-        .star {
+        /* Create a class for the bubbles */
+        .bubble {
             position: fixed;
-            width: 2px;
-            height: 2px;
-            background-color: white;
-            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+            border-radius: 50%;
+            pointer-events: none; /* Allow cursor to interact with elements underneath */
         }
     </style>
 </head>
 <body>
-    <!-- JavaScript to create and move stars -->
+    <!-- JavaScript to create and move bubbles -->
     <script>
-        // Function to create a star at a random position
-        function createStar() {
-            const star = document.createElement("div");
-            star.classList.add("star");
-            star.style.left = `${Math.random() * 100}vw`;
-            star.style.top = `${Math.random() * 100}vh`;
-            document.body.appendChild(star);
+        // Function to create a bubble at a random position
+        function createBubble() {
+            const bubble = document.createElement("div");
+            bubble.classList.add("bubble");
+            bubble.style.left = `${Math.random() * 100}vw`;
+            bubble.style.top = `${Math.random() * 100}vh`;
+            document.body.appendChild(bubble);
 
-            // Animate the star's movement
-            star.animate(
+            // Animate the bubble's movement
+            bubble.animate(
                 [
-                    { transform: "translate(-2px, -2px)" },
-                    { transform: "translate(2px, 2px)" },
+                    { transform: "translate(0, 0)" },
+                    { transform: "translate(0, 0)" },
                 ],
                 {
                     duration: 2000 + Math.random() * 3000, // Randomize the duration
@@ -86,14 +88,23 @@
             );
         }
 
-        // Create multiple stars to cover the viewport
-        for (let i = 0; i < 100; i++) { // You can adjust the number of stars
-            createStar();
+        // Create multiple bubbles to cover the viewport
+        for (let i = 0; i < 100; i++) { // You can adjust the number of bubbles
+            createBubble();
         }
+
+        // Add event listener to move bubbles in reaction to cursor
+        document.addEventListener("mousemove", (e) => {
+            const bubbles = document.querySelectorAll(".bubble");
+            bubbles.forEach((bubble) => {
+                const deltaX = e.clientX - bubble.getBoundingClientRect().left - bubble.clientWidth / 2;
+                const deltaY = e.clientY - bubble.getBoundingClientRect().top - bubble.clientHeight / 2;
+                bubble.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+            });
+        });
     </script>
 </body>
 </html>
-
 
 Data-driven entrepreneur and versatile data scientist with a proven track record of leveraging diverse skill sets to seize opportunities. Proficient in data modeling and processing, as well as programming languages including Python and SwiftUI. Procuring, cleaning and interpreting data from varying sources to create solutions and overcome challenges.
                   
