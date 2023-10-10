@@ -43,37 +43,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moving Green Dots Background</title>
+    <title>Moving Random Code Background</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             background-color: black;
+            overflow: hidden; /* Hide overflowing code elements */
         }
 
-        /* Create a class for the green dot */
-        .green-dot {
+        /* Create a class for the random code element */
+        .random-code {
             position: fixed;
-            width: 5px;
-            height: 5px;
-            background-color: green;
-            border-radius: 100%;
+            font-family: monospace;
+            font-size: 16px;
+            color: green;
         }
     </style>
 </head>
 <body>
-    <!-- JavaScript to create and move green dots -->
+    <!-- JavaScript to create and move random code elements -->
     <script>
-        // Function to create a green dot at a random position
-        function createGreenDot() {
-            const dot = document.createElement("div");
-            dot.classList.add("green-dot");
-            dot.style.left = `${Math.random() * 100}vw`;
-            dot.style.top = `${Math.random() * 100}vh`;
-            document.body.appendChild(dot);
+        // Function to create a random code element at a random position
+        function createRandomCode() {
+            const codeElement = document.createElement("div");
+            codeElement.classList.add("random-code");
 
-            // Animate the dot's movement
-            dot.animate(
+            // Generate random code content (you can customize this)
+            const codeContent = Math.random().toString(36).substring(2, 10);
+
+            codeElement.textContent = codeContent;
+            codeElement.style.left = `${Math.random() * 100}vw`;
+            codeElement.style.top = `${Math.random() * 100}vh`;
+            document.body.appendChild(codeElement);
+
+            // Animate the code element's movement
+            codeElement.animate(
                 [
                     { transform: "translate(-10px, -10px)" },
                     { transform: "translate(10px, 10px)" },
@@ -86,20 +91,10 @@
             );
         }
 
-        // Create multiple green dots to cover the viewport
-        for (let i = 0; i < 100; i++) { // You can adjust the number of dots
-            createGreenDot();
+        // Create multiple random code elements to cover the viewport
+        for (let i = 0; i < 100; i++) { // You can adjust the number of elements
+            createRandomCode();
         }
-
-        // Add event listener to move green dots in reaction to cursor
-        document.addEventListener("mousemove", (e) => {
-            const dots = document.querySelectorAll(".green-dot");
-            dots.forEach((dot) => {
-                const deltaX = e.clientX - dot.getBoundingClientRect().left - dot.clientWidth / 2;
-                const deltaY = e.clientY - dot.getBoundingClientRect().top - dot.clientHeight / 2;
-                dot.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-            });
-        });
     </script>
 </body>
 </html>
