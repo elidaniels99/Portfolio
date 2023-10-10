@@ -90,6 +90,16 @@
         for (let i = 0; i < 100; i++) { // You can adjust the number of dots
             createGreenDot();
         }
+
+        // Add event listener to move green dots in reaction to cursor
+        document.addEventListener("mousemove", (e) => {
+            const dots = document.querySelectorAll(".green-dot");
+            dots.forEach((dot) => {
+                const deltaX = e.clientX - dot.getBoundingClientRect().left - dot.clientWidth / 2;
+                const deltaY = e.clientY - dot.getBoundingClientRect().top - dot.clientHeight / 2;
+                dot.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+            });
+        });
     </script>
 </body>
 </html>
