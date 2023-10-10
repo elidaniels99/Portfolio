@@ -43,60 +43,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glowing Firefly-like Particles Background</title>
+    <title>Moving Green Dots Background</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: black; /* Background color (black) */
-            
+            background-color: black;
         }
 
-        /* Create a class for the particles */
-        .particle {
+        /* Create a class for the green dot */
+        .green-dot {
             position: fixed;
-            width: 10px;
-            height: 10px;
-            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
-            border-radius: 50%;
-            pointer-events: none; /* Allow cursor to interact with elements underneath */
-            animation: moveParticle 5s infinite alternate, glow 2s infinite alternate;
-        }
-
-        @keyframes moveParticle {
-            0% {
-                transform: translate(0, 0);
-            }
-            100% {
-                transform: translate(30px, 30px); /* Adjust particle movement range */
-            }
-        }
-
-        @keyframes glow {
-            0% {
-                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Initial glow effect */
-            }
-            100% {
-                box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Stronger glow effect */
-            }
+            width: 5px;
+            height: 5px;
+            background-color: green;
+            border-radius: 100%;
         }
     </style>
 </head>
 <body>
-    <!-- JavaScript to create and move particles -->
+    <!-- JavaScript to create and move green dots -->
     <script>
-        // Function to create a particle at a random position
-        function createParticle() {
-            const particle = document.createElement("div");
-            particle.classList.add("particle");
-            particle.style.left = `${Math.random() * 100}vw`;
-            particle.style.top = `${Math.random() * 100}vh`;
-            document.body.appendChild(particle);
+        // Function to create a green dot at a random position
+        function createGreenDot() {
+            const dot = document.createElement("div");
+            dot.classList.add("green-dot");
+            dot.style.left = `${Math.random() * 100}vw`;
+            dot.style.top = `${Math.random() * 100}vh`;
+            document.body.appendChild(dot);
+
+            // Animate the dot's movement
+            dot.animate(
+                [
+                    { transform: "translate(-10px, -10px)" },
+                    { transform: "translate(10px, 10px)" },
+                ],
+                {
+                    duration: 2000 + Math.random() * 3000, // Randomize the duration
+                    iterations: Infinity,
+                    direction: "alternate", // Make it bounce back and forth
+                }
+            );
         }
 
-        // Create multiple particles to cover the viewport
-        for (let i = 0; i < 100; i++) { // You can adjust the number of particles
-            createParticle();
+        // Create multiple green dots to cover the viewport
+        for (let i = 0; i < 100; i++) { // You can adjust the number of dots
+            createGreenDot();
         }
     </script>
 </body>
